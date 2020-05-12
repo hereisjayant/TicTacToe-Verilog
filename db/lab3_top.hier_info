@@ -768,32 +768,72 @@ out[8] <= out[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab3_top|DetectWinner:Wins
-ain[0] => ~NO_FANOUT~
-ain[1] => ~NO_FANOUT~
-ain[2] => ~NO_FANOUT~
-ain[3] => ~NO_FANOUT~
-ain[4] => ~NO_FANOUT~
-ain[5] => ~NO_FANOUT~
-ain[6] => ~NO_FANOUT~
-ain[7] => ~NO_FANOUT~
-ain[8] => ~NO_FANOUT~
-bin[0] => ~NO_FANOUT~
-bin[1] => ~NO_FANOUT~
-bin[2] => ~NO_FANOUT~
-bin[3] => ~NO_FANOUT~
-bin[4] => ~NO_FANOUT~
-bin[5] => ~NO_FANOUT~
-bin[6] => ~NO_FANOUT~
-bin[7] => ~NO_FANOUT~
-bin[8] => ~NO_FANOUT~
-win_line[0] <= <GND>
-win_line[1] <= <GND>
-win_line[2] <= <GND>
-win_line[3] <= <GND>
-win_line[4] <= <GND>
-win_line[5] <= <GND>
-win_line[6] <= <GND>
-win_line[7] <= <GND>
+ain[0] => ain[0].IN1
+ain[1] => ain[1].IN1
+ain[2] => ain[2].IN1
+ain[3] => ain[3].IN1
+ain[4] => ain[4].IN1
+ain[5] => ain[5].IN1
+ain[6] => ain[6].IN1
+ain[7] => ain[7].IN1
+ain[8] => ain[8].IN1
+bin[0] => bin[0].IN1
+bin[1] => bin[1].IN1
+bin[2] => bin[2].IN1
+bin[3] => bin[3].IN1
+bin[4] => bin[4].IN1
+bin[5] => bin[5].IN1
+bin[6] => bin[6].IN1
+bin[7] => bin[7].IN1
+bin[8] => bin[8].IN1
+win_line[0] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+win_line[1] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+win_line[2] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+win_line[3] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+win_line[4] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+win_line[5] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+win_line[6] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+win_line[7] <= win_line.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_top|DetectWinner:Wins|check_win:win_a
+xin[0] => Decoder0.IN8
+xin[1] => Decoder0.IN7
+xin[2] => Decoder0.IN6
+xin[3] => Decoder0.IN5
+xin[4] => Decoder0.IN4
+xin[5] => Decoder0.IN3
+xin[6] => Decoder0.IN2
+xin[7] => Decoder0.IN1
+xin[8] => Decoder0.IN0
+win_line[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab3_top|DetectWinner:Wins|check_win:win_b
+xin[0] => Decoder0.IN8
+xin[1] => Decoder0.IN7
+xin[2] => Decoder0.IN6
+xin[3] => Decoder0.IN5
+xin[4] => Decoder0.IN4
+xin[5] => Decoder0.IN3
+xin[6] => Decoder0.IN2
+xin[7] => Decoder0.IN1
+xin[8] => Decoder0.IN0
+win_line[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+win_line[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab3_top|TicTacToe_to_VGA:GFX

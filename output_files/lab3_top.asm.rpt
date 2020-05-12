@@ -1,5 +1,5 @@
 Assembler report for lab3_top
-Tue May 12 21:07:25 2020
+Tue May 12 23:20:55 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue May 12 21:07:25 2020 ;
+; Assembler Status      ; Successful - Tue May 12 23:20:55 2020 ;
 ; Revision Name         ; lab3_top                              ;
 ; Top-level Entity Name ; lab3_top                              ;
 ; Family                ; Cyclone V                             ;
@@ -66,8 +66,8 @@ refer to the applicable agreement for further details.
 +----------------+---------------------------------------------------------------------------------+
 ; Option         ; Setting                                                                         ;
 +----------------+---------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x00CB30BD                                                                      ;
-; Checksum       ; 0x00CB30BD                                                                      ;
+; JTAG usercode  ; 0x00CC7BC8                                                                      ;
+; Checksum       ; 0x00CC7BC8                                                                      ;
 +----------------+---------------------------------------------------------------------------------+
 
 
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 12 21:07:01 2020
+    Info: Processing started: Tue May 12 23:20:33 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off lab3 -c lab3_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4844 megabytes
-    Info: Processing ended: Tue May 12 21:07:26 2020
-    Info: Elapsed time: 00:00:25
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Peak virtual memory: 4843 megabytes
+    Info: Processing ended: Tue May 12 23:20:55 2020
+    Info: Elapsed time: 00:00:22
+    Info: Total CPU time (on all processors): 00:00:19
 
 
