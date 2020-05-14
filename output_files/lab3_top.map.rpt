@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3_top
-Tue May 12 23:18:00 2020
+Thu May 14 16:33:55 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -91,7 +91,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue May 12 23:18:00 2020       ;
+; Analysis & Synthesis Status     ; Successful - Thu May 14 16:33:53 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab3_top                                    ;
 ; Top-level Entity Name           ; lab3_top                                    ;
@@ -211,7 +211,9 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -271,14 +273,14 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 340            ;
+; Estimate of Logic utilization (ALMs needed) ; 460            ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 505            ;
-;     -- 7 input functions                    ; 6              ;
-;     -- 6 input functions                    ; 152            ;
-;     -- 5 input functions                    ; 86             ;
-;     -- 4 input functions                    ; 71             ;
-;     -- <=3 input functions                  ; 190            ;
+; Combinational ALUT usage for logic          ; 641            ;
+;     -- 7 input functions                    ; 4              ;
+;     -- 6 input functions                    ; 259            ;
+;     -- 5 input functions                    ; 95             ;
+;     -- 4 input functions                    ; 75             ;
+;     -- <=3 input functions                  ; 208            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 255            ;
 ;                                             ;                ;
@@ -293,8 +295,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 218            ;
-; Total fan-out                               ; 3680           ;
-; Average fan-out                             ; 3.97           ;
+; Total fan-out                               ; 4415           ;
+; Average fan-out                             ; 4.16           ;
 +---------------------------------------------+----------------+
 
 
@@ -303,25 +305,25 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                        ; Entity Name                       ; Library Name ;
 +--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |lab3_top                                        ; 505 (2)             ; 255 (0)                   ; 35968             ; 0          ; 54   ; 0            ; |lab3_top                                                                                                                                  ; lab3_top                          ; work         ;
-;    |DetectWinner:Wins|                           ; 32 (8)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins                                                                                                                ; DetectWinner                      ; work         ;
-;       |check_win:win_a|                          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins|check_win:win_a                                                                                                ; check_win                         ; work         ;
-;       |check_win:win_b|                          ; 12 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins|check_win:win_b                                                                                                ; check_win                         ; work         ;
-;    |GameState:State|                             ; 73 (73)             ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|GameState:State                                                                                                                  ; GameState                         ; work         ;
+; |lab3_top                                        ; 641 (2)             ; 255 (0)                   ; 35968             ; 0          ; 54   ; 0            ; |lab3_top                                                                                                                                  ; lab3_top                          ; work         ;
+;    |DetectWinner:Wins|                           ; 144 (64)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins                                                                                                                ; DetectWinner                      ; work         ;
+;       |check_win:win_a|                          ; 45 (45)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins|check_win:win_a                                                                                                ; check_win                         ; work         ;
+;       |check_win:win_b|                          ; 35 (35)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins|check_win:win_b                                                                                                ; check_win                         ; work         ;
+;    |GameState:State|                             ; 88 (88)             ; 27 (0)                    ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|GameState:State                                                                                                                  ; GameState                         ; work         ;
 ;       |vDFF:oreg|                                ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|GameState:State|vDFF:oreg                                                                                                        ; vDFF                              ; work         ;
 ;       |vDFF:xmov|                                ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|GameState:State|vDFF:xmov                                                                                                        ; vDFF                              ; work         ;
 ;       |vDFF:xreg|                                ; 0 (0)               ; 9 (9)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|GameState:State|vDFF:xreg                                                                                                        ; vDFF                              ; work         ;
-;    |TicTacToe:GameLogic|                         ; 72 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic                                                                                                              ; TicTacToe                         ; work         ;
-;       |Empty:emptyx|                             ; 5 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Empty:emptyx                                                                                                 ; Empty                             ; work         ;
-;          |RArb:ra|                               ; 5 (5)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Empty:emptyx|RArb:ra                                                                                         ; RArb                              ; work         ;
-;       |Select3:comb|                             ; 30 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Select3:comb                                                                                                 ; Select3                           ; work         ;
-;          |RArb:ra|                               ; 16 (16)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Select3:comb|RArb:ra                                                                                         ; RArb                              ; work         ;
+;    |TicTacToe:GameLogic|                         ; 77 (0)              ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic                                                                                                              ; TicTacToe                         ; work         ;
+;       |Empty:emptyx|                             ; 6 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Empty:emptyx                                                                                                 ; Empty                             ; work         ;
+;          |RArb:ra|                               ; 6 (6)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Empty:emptyx|RArb:ra                                                                                         ; RArb                              ; work         ;
+;       |Select3:comb|                             ; 34 (12)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Select3:comb                                                                                                 ; Select3                           ; work         ;
+;          |RArb:ra|                               ; 22 (22)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|Select3:comb|RArb:ra                                                                                         ; RArb                              ; work         ;
 ;       |TwoInArray:blockx|                        ; 15 (14)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|TwoInArray:blockx                                                                                            ; TwoInArray                        ; work         ;
 ;          |TwoInRow:topr|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|TwoInArray:blockx|TwoInRow:topr                                                                              ; TwoInRow                          ; work         ;
 ;       |TwoInArray:winx|                          ; 22 (20)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|TwoInArray:winx                                                                                              ; TwoInArray                        ; work         ;
 ;          |TwoInRow:leftc|                        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|TwoInArray:winx|TwoInRow:leftc                                                                               ; TwoInRow                          ; work         ;
 ;          |TwoInRow:topr|                         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe:GameLogic|TwoInArray:winx|TwoInRow:topr                                                                                ; TwoInRow                          ; work         ;
-;    |TicTacToe_to_VGA:GFX|                        ; 326 (0)             ; 228 (0)                   ; 35968             ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX                                                                                                             ; TicTacToe_to_VGA                  ; work         ;
+;    |TicTacToe_to_VGA:GFX|                        ; 330 (0)             ; 228 (0)                   ; 35968             ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX                                                                                                             ; TicTacToe_to_VGA                  ; work         ;
 ;       |framebuffer:FB|                           ; 110 (12)            ; 160 (2)                   ; 3200              ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|framebuffer:FB                                                                                              ; framebuffer                       ; work         ;
 ;          |altera_pll:altera_pll_i|               ; 0 (0)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|framebuffer:FB|altera_pll:altera_pll_i                                                                      ; altera_pll                        ; work         ;
 ;          |altera_up_avalon_video_vga_timing:VGA| ; 41 (41)             ; 56 (56)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|framebuffer:FB|altera_up_avalon_video_vga_timing:VGA                                                        ; altera_up_avalon_video_vga_timing ; work         ;
@@ -345,7 +347,7 @@ refer to the applicable agreement for further details.
 ;          |vDFF:R_REG|                            ; 1 (1)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFF:R_REG                                                                                ; vDFF                              ; work         ;
 ;          |vDFFE:X_REG|                           ; 10 (10)             ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFFE:X_REG                                                                               ; vDFFE                             ; work         ;
 ;          |vDFFE:Y_REG|                           ; 0 (0)               ; 10 (10)                   ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFFE:Y_REG                                                                               ; vDFFE                             ; work         ;
-;       |tictactoe_shader:SHADER|                  ; 168 (168)           ; 46 (0)                    ; 32768             ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER                                                                                     ; tictactoe_shader                  ; work         ;
+;       |tictactoe_shader:SHADER|                  ; 172 (172)           ; 46 (0)                    ; 32768             ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER                                                                                     ; tictactoe_shader                  ; work         ;
 ;          |ROM:OBMP|                              ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:OBMP                                                                            ; ROM                               ; work         ;
 ;             |altsyncram:rom_rtl_0|               ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:OBMP|altsyncram:rom_rtl_0                                                       ; altsyncram                        ; work         ;
 ;                |altsyncram_src1:auto_generated|  ; 0 (0)               ; 0 (0)                     ; 16384             ; 0          ; 0    ; 0            ; |lab3_top|TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:OBMP|altsyncram:rom_rtl_0|altsyncram_src1:auto_generated                        ; altsyncram_src1                   ; work         ;
@@ -1379,20 +1381,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 10                          ;
 ;     SCLR              ; 55                          ;
 ;     plain             ; 102                         ;
-; arriav_lcell_comb     ; 507                         ;
+; arriav_lcell_comb     ; 643                         ;
 ;     arith             ; 91                          ;
 ;         1 data inputs ; 81                          ;
 ;         2 data inputs ; 10                          ;
-;     extend            ; 6                           ;
-;         7 data inputs ; 6                           ;
-;     normal            ; 390                         ;
+;     extend            ; 4                           ;
+;         7 data inputs ; 4                           ;
+;     normal            ; 528                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 8                           ;
-;         2 data inputs ; 41                          ;
-;         3 data inputs ; 31                          ;
-;         4 data inputs ; 71                          ;
-;         5 data inputs ; 86                          ;
-;         6 data inputs ; 152                         ;
+;         2 data inputs ; 49                          ;
+;         3 data inputs ; 41                          ;
+;         4 data inputs ; 75                          ;
+;         5 data inputs ; 95                          ;
+;         6 data inputs ; 259                         ;
 ;     shared            ; 20                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 2                           ;
@@ -1403,7 +1405,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; stratixv_ram_block    ; 57                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 9.00                        ;
-; Average LUT depth     ; 3.71                        ;
+; Average LUT depth     ; 4.48                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1412,7 +1414,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:12     ;
 +----------------+--------------+
 
 
@@ -1422,7 +1424,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Tue May 12 23:17:12 2020
+    Info: Processing started: Thu May 14 16:32:39 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -1468,6 +1470,13 @@ Info (12128): Elaborating entity "GameState" for hierarchy "GameState:State" Fil
 Info (12128): Elaborating entity "vDFF" for hierarchy "GameState:State|vDFF:xmov" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/game_state.v Line: 14
 Info (12128): Elaborating entity "DetectWinner" for hierarchy "DetectWinner:Wins" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 46
 Info (12128): Elaborating entity "check_win" for hierarchy "DetectWinner:Wins|check_win:win_a" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 19
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(30): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 30
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(31): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 31
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(32): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 32
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(33): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 33
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(34): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 34
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(35): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 35
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(36): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 36
 Info (12128): Elaborating entity "TicTacToe_to_VGA" for hierarchy "TicTacToe_to_VGA:GFX" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 72
 Info (12128): Elaborating entity "rasterizer" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 45
 Info (12128): Elaborating entity "vDFF" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFF:CTRL" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 88
@@ -1618,16 +1627,16 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 2
     Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 2
     Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 3
-Info (21057): Implemented 761 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 897 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 39 output pins
-    Info (21061): Implemented 649 logic cells
+    Info (21061): Implemented 785 logic cells
     Info (21064): Implemented 57 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
     Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Tue May 12 23:18:00 2020
-    Info: Elapsed time: 00:00:48
-    Info: Total CPU time (on all processors): 00:01:18
+    Info: Processing ended: Thu May 14 16:33:56 2020
+    Info: Elapsed time: 00:01:17
+    Info: Total CPU time (on all processors): 00:01:30
 
 
