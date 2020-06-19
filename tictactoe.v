@@ -89,12 +89,13 @@ endmodule // RArb
 module TicTacToe(xin, oin, xout) ;
   input [8:0] xin, oin ;
   output [8:0] xout ;
-  wire [8:0] win, block, empty ;
+  wire [8:0] adedge, win, block, empty ;
 
+  PlayAdjacentEdge addedgex(xin, oin, adedge);
   TwoInArray winx(xin, oin, win) ;           // win if we can
   TwoInArray blockx(oin, xin, block) ;       // try to block o from winning
   Empty      emptyx(~(oin | xin), empty) ;   // otherwise pick empty space
-  Select3    comb(win, block, empty, xout) ; // pick highest priority
+  Select4    comb(adedge ,win, block, empty, xout) ; // pick highest priority
 endmodule // TicTacToe
 
 module PlayAdjacentEdge(ain, bin, cout );
@@ -109,7 +110,7 @@ module PlayAdjacentEdge(ain, bin, cout );
     endcase
   end
   endmodule
-  
+
 
 //Figure 9.13
 module TwoInArray(ain, bin, cout) ;
@@ -165,15 +166,15 @@ module Empty(in, out) ;
 endmodule // Empty
 
 //Figure 9.16
-module Select3(a, b, c, out) ;
-  input [8:0] a, b, c;
+module Select4(a, b, c, d, out) ;
+  input [8:0] a, b, c, d;
   output [8:0] out ;
-  wire [26:0] x ;
+  wire [35:0] x ;
 
-  RArb #(27) ra({a,b,c},x) ;
+  RArb #(36) ra({a,b,c,d},x) ;
 
-  assign out = x[26:18] | x[17:9] | x[8:0] ;
-endmodule // Select3
+  assign out = x[35:27] | x[26:18] | x[17:9] | x[8:0] ;
+endmodule // Select4
 
 //Figure 9.18
 module TestTic ;

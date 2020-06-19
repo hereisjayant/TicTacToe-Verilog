@@ -94,21 +94,21 @@ R5
 R6
 n@detect@winner
 vEmpty
-Z14 !s110 1589453759
+Z14 !s110 1592562755
 !i10b 1
-!s100 fL_<O3naoVU:ZOY?Y=_[J0
-IIM<2Z]D:Ym<6bjkO@EoI71
+!s100 VHh4g6Pk;UGjNV:6E]^Sn0
+I5ko^B6d@I44KH<6G[2>nU3
 R1
 R2
-Z15 w1589221937
+Z15 w1592562685
 Z16 8C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v
 Z17 FC:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v
-L0 145
+L0 160
 R4
 r1
 !s85 0
 31
-Z18 !s108 1589453758.000000
+Z18 !s108 1592562754.000000
 Z19 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v|
 Z20 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v|
 !i113 1
@@ -195,30 +195,52 @@ R4
 r1
 !s85 0
 31
-R18
+Z26 !s108 1589453758.000000
 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v|
 !i113 1
 R5
 R6
+vPlayAdjacentEdge
+R14
+!i10b 1
+!s100 nKX8?amO@5:=YiQ;eShEg1
+IFLbXmhJ;YJealJPB?cW620
+R1
+R2
+R15
+R16
+R17
+L0 101
+R4
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R5
+R6
+n@play@adjacent@edge
 vRAM
-Z26 !s110 1589453763
+Z27 !s110 1589453763
 !i10b 1
 !s100 :g:cBam^K7GjYMDnEG?mj2
 IlRLec]W1m8gUG8zngc]=G3
 R1
 R2
 R3
-Z27 8C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
-Z28 FC:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
+Z28 8C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
+Z29 FC:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
 L0 83
 R4
 r1
 !s85 0
 31
-Z29 !s108 1589453762.000000
-Z30 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
-Z31 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
+Z30 !s108 1589453762.000000
+Z31 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
+Z32 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
 !i113 1
 R5
 R6
@@ -246,7 +268,7 @@ R5
 R6
 n@r@arb
 vrasterizer
-R14
+Z33 !s110 1589453759
 !i10b 1
 !s100 gaYl9Vbogzl4`c1TMnVc@2
 I<egX=WLahBM`4aSajX4@D0
@@ -267,38 +289,60 @@ R25
 R5
 R6
 vROM
-R26
+R27
 !i10b 1
 !s100 aQ>F0@_^;f4_aZZ1<=WMj3
 Ij?H1R6>Gn9djN=Ih^bZ0S2
 R1
 R2
 R3
-R27
 R28
+R29
 L0 62
 R4
 r1
 !s85 0
 31
-R29
 R30
 R31
+R32
 !i113 1
 R5
 R6
 n@r@o@m
 vSelect3
-R14
+R33
 !i10b 1
 !s100 Sl0kR5PiA^e[Xz^Wz:Do91
 I4K[A2S`TdbTNe9D_lgMfM0
 R1
 R2
-R15
+w1589221937
 R16
 R17
 L0 154
+R4
+r1
+!s85 0
+31
+R26
+R19
+R20
+!i113 1
+R5
+R6
+n@select3
+vSelect4
+R14
+!i10b 1
+!s100 mcg4IcN:OJU0:gocYYdl00
+IZ_kmQTi2MBDo`^@AFc2I63
+R1
+R2
+R15
+R16
+R17
+L0 169
 R4
 r1
 !s85 0
@@ -309,18 +353,18 @@ R20
 !i113 1
 R5
 R6
-n@select3
+n@select4
 vTestTic
 R14
 !i10b 1
-!s100 oz;3UZlUOnTlV]iW:_Bl=3
-I:DiNBc9<]iXmC0h@4O<h70
+!s100 ZDNROFkgVN[LjY65kYR=13
+IFnaJAA=c@elTNHUGSWV<<2
 R1
 R2
 R15
 R16
 R17
-L0 165
+L0 180
 R4
 r1
 !s85 0
@@ -335,8 +379,8 @@ n@test@tic
 vTicTacToe
 R14
 !i10b 1
-!s100 c9FhoYn?=a=HY1H0cYhb61
-IM=KM6]@cna7;`>nAfVAR53
+!s100 h3iGeI^CNSHYkX]U]WScI2
+I9QefUaXLe1emnfLgT;:Md2
 R1
 R2
 R15
@@ -355,7 +399,7 @@ R5
 R6
 n@tic@tac@toe
 vtictactoe_shader
-R14
+R33
 !i10b 1
 !s100 07;AOKi^DcNGhdfKY=m810
 IFnMFl7l4dbzBFQF?MFank3
@@ -376,7 +420,7 @@ R25
 R5
 R6
 vTicTacToe_to_VGA
-R14
+R33
 !i10b 1
 !s100 TC9cme8z4HAe?<7<neReH3
 IE@gjgJ1QW>Ya2PzTML3Zz3
@@ -400,14 +444,14 @@ n@tic@tac@toe_to_@v@g@a
 vTwoInArray
 R14
 !i10b 1
-!s100 ^[4C:=o@WU@MEb2h=Y_oh0
-I1CBd25@HTSb:364L<SGIo0
+!s100 J8QUPi]lgi>21=gbkK?jl1
+ITSBHnBS=^NjJDUUN9@?GT1
 R1
 R2
 R15
 R16
 R17
-L0 101
+L0 116
 R4
 r1
 !s85 0
@@ -422,14 +466,14 @@ n@two@in@array
 vTwoInRow
 R14
 !i10b 1
-!s100 CK2BP<L;JFI1gb6UnSc7_3
-I;hVHO6Z>^Zkm@>@Rdj:G]3
+!s100 ?Vf87kdFGB5Qe<^h?ZHJQ3
+I0CZbnnk<aij5hEm6`2D7O0
 R1
 R2
 R15
 R16
 R17
-L0 135
+L0 150
 R4
 r1
 !s85 0
@@ -442,45 +486,45 @@ R5
 R6
 n@two@in@row
 vvDFF
-R26
+R27
 !i10b 1
 !s100 IOzeoJ4^ReEE4K3Fnoj<V2
 I]b??c`IbCFiS0O>YAglL81
 R1
 R2
 R3
-R27
 R28
+R29
 L0 35
 R4
 r1
 !s85 0
 31
-R29
 R30
 R31
+R32
 !i113 1
 R5
 R6
 nv@d@f@f
 vvDFFE
-R26
+R27
 !i10b 1
 !s100 ^30A^^mPGCM3[Yl8<J[oo1
 INXgnQLO<A6nL]CdSd3;i>0
 R1
 R2
 R3
-R27
 R28
+R29
 L0 48
 R4
 r1
 !s85 0
 31
-R29
 R30
 R31
+R32
 !i113 1
 R5
 R6
