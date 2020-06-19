@@ -37,11 +37,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 // Inputs and outputs use a board mapping of:
 //
-//   0 | 1 | 2 
+//   0 | 1 | 2
 //  ---+---+---
-//   3 | 4 | 5 
+//   3 | 4 | 5
 //  ---+---+---
-//   6 | 7 | 8 
+//   6 | 7 | 8
 //
 // The top-level circuit instantiates strategy modules that each generate
 // a move according to their strategy and a selector module that selects
@@ -60,10 +60,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 // of "requests" r -- one request per bit of r.  The output "g" is a set of
 // grant signals.  If "r" is not all zeros, then a single bit of "g" will be
 // set to 1.  Which bit?  The bit of "g" that will be set to 1 will be the
-// bit that is in the same position as the first bit of "r" that is set to 
+// bit that is in the same position as the first bit of "r" that is set to
 // 1 starting from the highest index bit position in "r".
 //
-// Note that r is declared as "input [n-1:0]".  This means it contains "n" 
+// Note that r is declared as "input [n-1:0]".  This means it contains "n"
 // bits with index values from n-1 for the leftmost bit down to 0 for the
 // right most bit.  By default n is set to 8, but we can change n when we
 // instantiate the RArb module.  For example, using the notation "RArb #(9)"
@@ -71,9 +71,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //
 // Suppose now that input r = 8'b00101111. Then, the bit with highest index,
 // bit 7, has a value of 1'b0 and the bit with lowest index has value 1'b1.
-// The output "g" will be 8'b00100000.  You may want to create a small 
-// testbench script and simulating just this module with different input 
-// values until you are sure you understand how the output "g" depends upon 
+// The output "g" will be 8'b00100000.  You may want to create a small
+// testbench script and simulating just this module with different input
+// values until you are sure you understand how the output "g" depends upon
 // the input "r".
 //
 // The textbook describes the this module in Chapter 8 (Figure 8.31).
@@ -97,6 +97,20 @@ module TicTacToe(xin, oin, xout) ;
   Select3    comb(win, block, empty, xout) ; // pick highest priority
 endmodule // TicTacToe
 
+module PlayAdjacentEdge(ain, bin, cout );
+  input [8:0] ain, bin;
+  output reg [8:0] cout;
+
+  always @* begin
+    casex( {ain, bin} )
+      18'b000_010_000__100_000_001: cout = 9'b000_100_000;  //checks the first case
+      18'b000_010_000__001_000_100: cout = 9'b000_001_000;  //checks the the other case case
+      default: cout = 9'b0; //if the preconditions are not met, does nothing!
+    endcase
+  end
+  endmodule
+  
+
 //Figure 9.13
 module TwoInArray(ain, bin, cout) ;
   input [8:0] ain, bin ;
@@ -111,14 +125,14 @@ module TwoInArray(ain, bin, cout) ;
   TwoInRow botr(ain[8:6],bin[8:6],rows[8:6]) ;
 
   // check each column
-  TwoInRow leftc({ain[6],ain[3],ain[0]}, 
-                  {bin[6],bin[3],bin[0]}, 
+  TwoInRow leftc({ain[6],ain[3],ain[0]},
+                  {bin[6],bin[3],bin[0]},
                   {cols[6],cols[3],cols[0]}) ;
-  TwoInRow midc({ain[7],ain[4],ain[1]}, 
-                  {bin[7],bin[4],bin[1]}, 
+  TwoInRow midc({ain[7],ain[4],ain[1]},
+                  {bin[7],bin[4],bin[1]},
                   {cols[7],cols[4],cols[1]}) ;
-  TwoInRow rightc({ain[8],ain[5],ain[2]}, 
-                  {bin[8],bin[5],bin[2]}, 
+  TwoInRow rightc({ain[8],ain[5],ain[2]},
+                  {bin[8],bin[5],bin[2]},
                   {cols[8],cols[5],cols[2]}) ;
 
   // check both diagonals
@@ -126,7 +140,7 @@ module TwoInArray(ain, bin, cout) ;
   TwoInRow updiagx({ain[6],ain[4],ain[2]},{bin[6],bin[4],bin[2]},udiag) ;
 
   //OR together the outputs
-  assign cout = rows | cols | 
+  assign cout = rows | cols |
          {ddiag[2],1'b0,1'b0,1'b0,ddiag[1],1'b0,1'b0,1'b0,ddiag[0]} |
          {1'b0,1'b0,udiag[2],1'b0,udiag[1],1'b0,udiag[0],1'b0,1'b0} ;
 endmodule // TwoInArray
@@ -136,7 +150,7 @@ module TwoInRow(ain, bin, cout) ;
   input [2:0] ain, bin ;
   output [2:0] cout ;
 
-  assign cout[0] = ~bin[0] & ~ain[0] & ain[1] & ain[2] ; 
+  assign cout[0] = ~bin[0] & ~ain[0] & ain[1] & ain[2] ;
   assign cout[1] = ~bin[1] & ain[0] & ~ain[1] & ain[2] ;
   assign cout[2] = ~bin[2] & ain[0] & ain[1] & ~ain[2] ;
 endmodule // TwoInRow
@@ -171,30 +185,30 @@ module TestTic ;
 
   initial begin
     // all zeros, should pick middle
-    xin = 0 ; oin = 0 ; 
+    xin = 0 ; oin = 0 ;
     #100 $display("%b %b -> %b", xin, oin, xout) ;
     // can win across the top
-    xin = 9'b101 ; oin = 0 ; 
+    xin = 9'b101 ; oin = 0 ;
     #100 $display("%b %b -> %b", xin, oin, xout) ;
     // near-win: can't win across the top due to block
-    xin = 9'b101 ; oin = 9'b010 ; 
+    xin = 9'b101 ; oin = 9'b010 ;
     #100 $display("%b %b -> %b", xin, oin, xout) ;
     // block in the first column
-    xin = 0 ; oin = 9'b100100 ; 
+    xin = 0 ; oin = 9'b100100 ;
     #100 $display("%b %b -> %b", xin, oin, xout) ;
     // block along a diagonal
-    xin = 0 ; oin = 9'b010100 ; 
+    xin = 0 ; oin = 9'b010100 ;
     #100 $display("%b %b -> %b", xin, oin, xout) ;
     // start a game - x goes first
-    xin = 0 ; oin = 0 ; 
+    xin = 0 ; oin = 0 ;
     repeat (6) begin
       #100
       $display("%h %h %h", {xin[0],oin[0]},{xin[1],oin[1]},{xin[2],oin[2]}) ;
       $display("%h %h %h", {xin[3],oin[3]},{xin[4],oin[4]},{xin[5],oin[5]}) ;
       $display("%h %h %h", {xin[6],oin[6]},{xin[7],oin[7]},{xin[8],oin[8]}) ;
       $display(" ") ;
-      xin = (xout | xin) ; 
-      #100 
+      xin = (xout | xin) ;
+      #100
       $display("%h %h %h", {xin[0],oin[0]},{xin[1],oin[1]},{xin[2],oin[2]}) ;
       $display("%h %h %h", {xin[3],oin[3]},{xin[4],oin[4]},{xin[5],oin[5]}) ;
       $display("%h %h %h", {xin[6],oin[6]},{xin[7],oin[7]},{xin[8],oin[8]}) ;
