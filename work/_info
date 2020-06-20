@@ -94,7 +94,7 @@ R5
 R6
 n@detect@winner
 vEmpty
-Z14 !s110 1592562755
+Z14 !s110 1592667243
 !i10b 1
 !s100 VHh4g6Pk;UGjNV:6E]^Sn0
 I5ko^B6d@I44KH<6G[2>nU3
@@ -108,7 +108,7 @@ R4
 r1
 !s85 0
 31
-Z18 !s108 1592562754.000000
+Z18 !s108 1592667243.000000
 Z19 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v|
 Z20 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v|
 !i113 1
@@ -133,6 +133,27 @@ r1
 Z23 !s108 1589453759.000000
 Z24 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v|
 Z25 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v|
+!i113 1
+R5
+R6
+vgameplay_tb
+!s110 1592671886
+!i10b 1
+!s100 =[[MS;:n>gjPclim5Q5FL2
+I`ZaegJ8bEiNM:C@QNa?272
+R1
+R2
+w1592671866
+Z26 8C:/Users/herei/Desktop/CPEN211/programs/lab3/gameplay_tb.v
+Z27 FC:/Users/herei/Desktop/CPEN211/programs/lab3/gameplay_tb.v
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1592671886.000000
+!s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/gameplay_tb.v|
+Z28 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/gameplay_tb.v|
 !i113 1
 R5
 R6
@@ -195,7 +216,7 @@ R4
 r1
 !s85 0
 31
-Z26 !s108 1589453758.000000
+Z29 !s108 1589453758.000000
 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v|
 !i113 1
@@ -223,24 +244,46 @@ R20
 R5
 R6
 n@play@adjacent@edge
+vPlayAdjacentEdge_tb
+!s110 1592671231
+!i10b 1
+!s100 WFU:QlDk3Xoa:IQ^heDgG1
+IR<zJ12VT^2bBC;HibSV=;1
+R1
+R2
+w1592671225
+R26
+R27
+L0 1
+R4
+r1
+!s85 0
+31
+!s108 1592671231.000000
+!s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/gameplay_tb.v|
+R28
+!i113 1
+R5
+R6
+n@play@adjacent@edge_tb
 vRAM
-Z27 !s110 1589453763
+Z30 !s110 1589453763
 !i10b 1
 !s100 :g:cBam^K7GjYMDnEG?mj2
 IlRLec]W1m8gUG8zngc]=G3
 R1
 R2
 R3
-Z28 8C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
-Z29 FC:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
+Z31 8C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
+Z32 FC:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v
 L0 83
 R4
 r1
 !s85 0
 31
-Z30 !s108 1589453762.000000
-Z31 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
-Z32 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
+Z33 !s108 1589453762.000000
+Z34 !s107 C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
+Z35 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v|
 !i113 1
 R5
 R6
@@ -268,7 +311,7 @@ R5
 R6
 n@r@arb
 vrasterizer
-Z33 !s110 1589453759
+Z36 !s110 1589453759
 !i10b 1
 !s100 gaYl9Vbogzl4`c1TMnVc@2
 I<egX=WLahBM`4aSajX4@D0
@@ -289,29 +332,29 @@ R25
 R5
 R6
 vROM
-R27
+R30
 !i10b 1
 !s100 aQ>F0@_^;f4_aZZ1<=WMj3
 Ij?H1R6>Gn9djN=Ih^bZ0S2
 R1
 R2
 R3
-R28
-R29
+R31
+R32
 L0 62
 R4
 r1
 !s85 0
 31
-R30
-R31
-R32
+R33
+R34
+R35
 !i113 1
 R5
 R6
 n@r@o@m
 vSelect3
-R33
+R36
 !i10b 1
 !s100 Sl0kR5PiA^e[Xz^Wz:Do91
 I4K[A2S`TdbTNe9D_lgMfM0
@@ -325,7 +368,7 @@ R4
 r1
 !s85 0
 31
-R26
+R29
 R19
 R20
 !i113 1
@@ -399,7 +442,7 @@ R5
 R6
 n@tic@tac@toe
 vtictactoe_shader
-R33
+R36
 !i10b 1
 !s100 07;AOKi^DcNGhdfKY=m810
 IFnMFl7l4dbzBFQF?MFank3
@@ -420,7 +463,7 @@ R25
 R5
 R6
 vTicTacToe_to_VGA
-R33
+R36
 !i10b 1
 !s100 TC9cme8z4HAe?<7<neReH3
 IE@gjgJ1QW>Ya2PzTML3Zz3
@@ -486,45 +529,45 @@ R5
 R6
 n@two@in@row
 vvDFF
-R27
+R30
 !i10b 1
 !s100 IOzeoJ4^ReEE4K3Fnoj<V2
 I]b??c`IbCFiS0O>YAglL81
 R1
 R2
 R3
-R28
-R29
+R31
+R32
 L0 35
 R4
 r1
 !s85 0
 31
-R30
-R31
-R32
+R33
+R34
+R35
 !i113 1
 R5
 R6
 nv@d@f@f
 vvDFFE
-R27
+R30
 !i10b 1
 !s100 ^30A^^mPGCM3[Yl8<J[oo1
 INXgnQLO<A6nL]CdSd3;i>0
 R1
 R2
 R3
-R28
-R29
+R31
+R32
 L0 48
 R4
 r1
 !s85 0
 31
-R30
-R31
-R32
+R33
+R34
+R35
 !i113 1
 R5
 R6

@@ -57,33 +57,81 @@ VGA_B[7] << TicTacToe_to_VGA:GFX.VGA_B
 
 
 |lab3_top|TicTacToe:GameLogic
-xin[0] => xin[0].IN2
-xin[1] => xin[1].IN2
-xin[2] => xin[2].IN2
-xin[3] => xin[3].IN2
-xin[4] => xin[4].IN2
-xin[5] => xin[5].IN2
-xin[6] => xin[6].IN2
-xin[7] => xin[7].IN2
-xin[8] => xin[8].IN2
-oin[0] => oin[0].IN2
-oin[1] => oin[1].IN2
-oin[2] => oin[2].IN2
-oin[3] => oin[3].IN2
-oin[4] => oin[4].IN2
-oin[5] => oin[5].IN2
-oin[6] => oin[6].IN2
-oin[7] => oin[7].IN2
-oin[8] => oin[8].IN2
-xout[0] <= Select3:comb.port3
-xout[1] <= Select3:comb.port3
-xout[2] <= Select3:comb.port3
-xout[3] <= Select3:comb.port3
-xout[4] <= Select3:comb.port3
-xout[5] <= Select3:comb.port3
-xout[6] <= Select3:comb.port3
-xout[7] <= Select3:comb.port3
-xout[8] <= Select3:comb.port3
+xin[0] => xin[0].IN3
+xin[1] => xin[1].IN3
+xin[2] => xin[2].IN3
+xin[3] => xin[3].IN3
+xin[4] => xin[4].IN3
+xin[5] => xin[5].IN3
+xin[6] => xin[6].IN3
+xin[7] => xin[7].IN3
+xin[8] => xin[8].IN3
+oin[0] => oin[0].IN3
+oin[1] => oin[1].IN3
+oin[2] => oin[2].IN3
+oin[3] => oin[3].IN3
+oin[4] => oin[4].IN3
+oin[5] => oin[5].IN3
+oin[6] => oin[6].IN3
+oin[7] => oin[7].IN3
+oin[8] => oin[8].IN3
+xout[0] <= Select4:comb.port4
+xout[1] <= Select4:comb.port4
+xout[2] <= Select4:comb.port4
+xout[3] <= Select4:comb.port4
+xout[4] <= Select4:comb.port4
+xout[5] <= Select4:comb.port4
+xout[6] <= Select4:comb.port4
+xout[7] <= Select4:comb.port4
+xout[8] <= Select4:comb.port4
+
+
+|lab3_top|TicTacToe:GameLogic|PlayAdjacentEdge:addedgex
+ain[0] => Equal0.IN26
+ain[0] => Equal1.IN26
+ain[1] => Equal0.IN25
+ain[1] => Equal1.IN25
+ain[2] => Equal0.IN24
+ain[2] => Equal1.IN24
+ain[3] => Equal0.IN23
+ain[3] => Equal1.IN23
+ain[4] => Equal0.IN22
+ain[4] => Equal1.IN22
+ain[5] => Equal0.IN21
+ain[5] => Equal1.IN21
+ain[6] => Equal0.IN20
+ain[6] => Equal1.IN20
+ain[7] => Equal0.IN19
+ain[7] => Equal1.IN19
+ain[8] => Equal0.IN18
+ain[8] => Equal1.IN18
+bin[0] => Equal0.IN35
+bin[0] => Equal1.IN35
+bin[1] => Equal0.IN34
+bin[1] => Equal1.IN34
+bin[2] => Equal0.IN33
+bin[2] => Equal1.IN33
+bin[3] => Equal0.IN32
+bin[3] => Equal1.IN32
+bin[4] => Equal0.IN31
+bin[4] => Equal1.IN31
+bin[5] => Equal0.IN30
+bin[5] => Equal1.IN30
+bin[6] => Equal0.IN29
+bin[6] => Equal1.IN29
+bin[7] => Equal0.IN28
+bin[7] => Equal1.IN28
+bin[8] => Equal0.IN27
+bin[8] => Equal1.IN27
+cout[0] <= <GND>
+cout[1] <= <GND>
+cout[2] <= <GND>
+cout[3] <= Equal1.DB_MAX_OUTPUT_PORT_TYPE
+cout[4] <= <GND>
+cout[5] <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+cout[6] <= <GND>
+cout[7] <= <GND>
+cout[8] <= <GND>
 
 
 |lab3_top|TicTacToe:GameLogic|TwoInArray:winx
@@ -485,7 +533,7 @@ g[7] <= g.DB_MAX_OUTPUT_PORT_TYPE
 g[8] <= r[8].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab3_top|TicTacToe:GameLogic|Select3:comb
+|lab3_top|TicTacToe:GameLogic|Select4:comb
 a[0] => a[0].IN1
 a[1] => a[1].IN1
 a[2] => a[2].IN1
@@ -513,6 +561,15 @@ c[5] => c[5].IN1
 c[6] => c[6].IN1
 c[7] => c[7].IN1
 c[8] => c[8].IN1
+d[0] => d[0].IN1
+d[1] => d[1].IN1
+d[2] => d[2].IN1
+d[3] => d[3].IN1
+d[4] => d[4].IN1
+d[5] => d[5].IN1
+d[6] => d[6].IN1
+d[7] => d[7].IN1
+d[8] => d[8].IN1
 out[0] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[1] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[2] <= out.DB_MAX_OUTPUT_PORT_TYPE
@@ -524,7 +581,7 @@ out[7] <= out.DB_MAX_OUTPUT_PORT_TYPE
 out[8] <= out.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab3_top|TicTacToe:GameLogic|Select3:comb|RArb:ra
+|lab3_top|TicTacToe:GameLogic|Select4:comb|RArb:ra
 r[0] => g.IN1
 r[1] => g.IN1
 r[1] => c[0].IN1
@@ -574,11 +631,29 @@ r[23] => g.IN1
 r[23] => c[22].IN1
 r[24] => g.IN1
 r[24] => c[23].IN1
-r[25] => g.IN0
-r[25] => c[24].IN0
-r[26] => c[24].IN1
+r[25] => g.IN1
+r[25] => c[24].IN1
 r[26] => g.IN1
-r[26] => g[26].DATAIN
+r[26] => c[25].IN1
+r[27] => g.IN1
+r[27] => c[26].IN1
+r[28] => g.IN1
+r[28] => c[27].IN1
+r[29] => g.IN1
+r[29] => c[28].IN1
+r[30] => g.IN1
+r[30] => c[29].IN1
+r[31] => g.IN1
+r[31] => c[30].IN1
+r[32] => g.IN1
+r[32] => c[31].IN1
+r[33] => g.IN1
+r[33] => c[32].IN1
+r[34] => g.IN0
+r[34] => c[33].IN0
+r[35] => c[33].IN1
+r[35] => g.IN1
+r[35] => g[35].DATAIN
 g[0] <= g.DB_MAX_OUTPUT_PORT_TYPE
 g[1] <= g.DB_MAX_OUTPUT_PORT_TYPE
 g[2] <= g.DB_MAX_OUTPUT_PORT_TYPE
@@ -605,7 +680,16 @@ g[22] <= g.DB_MAX_OUTPUT_PORT_TYPE
 g[23] <= g.DB_MAX_OUTPUT_PORT_TYPE
 g[24] <= g.DB_MAX_OUTPUT_PORT_TYPE
 g[25] <= g.DB_MAX_OUTPUT_PORT_TYPE
-g[26] <= r[26].DB_MAX_OUTPUT_PORT_TYPE
+g[26] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[27] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[28] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[29] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[30] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[31] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[32] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[33] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[34] <= g.DB_MAX_OUTPUT_PORT_TYPE
+g[35] <= r[35].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab3_top|GameState:State
