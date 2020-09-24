@@ -24,7 +24,7 @@ module GameState(
   wire [3:0] o_count = o_new[0]+o_new[1]+o_new[2]+
                        o_new[3]+o_new[4]+o_new[5]+
                        o_new[6]+o_new[7]+o_new[8];
- 
+
   wire x_legal = (x_count == 1) & (~|x_overlap);
   wire o_legal = o_count == 1;
 
@@ -39,4 +39,8 @@ module GameState(
 
   vDFF #(9) xreg(clk,x_next_reset,x);
   vDFF #(9) oreg(clk,o_next_reset,o);
-endmodule 
+
+  wire [8:0] x_pos_tcl = x;
+  wire [8:0] o_pos_tcl = o;
+
+endmodule
