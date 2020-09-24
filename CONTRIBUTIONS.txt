@@ -1,0 +1,8 @@
+Jayant Bhardwaj: 57983801:
+
+- Edited detectwin.v and synthesized it.
+- Made detectwin_tb.v 
+- Tested design on DE1-SoC
+- Improved the game logicby adding PlayAdjacentEdge module.
+- Created gameplay_tb.v to test the game logic.
+- Completed bonus 1 and 2.
