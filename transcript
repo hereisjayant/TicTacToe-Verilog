@@ -1,37 +1,21 @@
+# Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# OpenFile C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3.mpf
+# Loading project lab3
+# 0 compiles, 10 failed with no errors.
+# Compile of detectwin.v was successful.
+# Compile of detectwin_tb.v was successful.
+# Compile of ff.v was successful.
+# Compile of game_state.v was successful.
+# Compile of gameplay_tb.v was successful.
+# Compile of lab3_top.v was successful.
+# Compile of RArb_tb.v was successful.
 # Compile of tictactoe.v was successful.
-vsim -gui work.detectwin_tb
-# vsim -gui work.detectwin_tb 
-# Start time: 21:04:23 on Jun 20,2020
-# Loading work.detectwin_tb
-# Loading work.DetectWinner
-# Loading work.check_win
-add wave -position end  sim:/detectwin_tb/ain
-add wave -position end  sim:/detectwin_tb/bin
-add wave -position end  sim:/detectwin_tb/output_line
-run -all
-# These are the winning cases
-# output is 00000001, expected output is 00000001
-# output is 00000010, expected output is 00000010
-# output is 00000100, expected output is 00000100
-# output is 00001000, expected output is 00001000
-# output is 00010000, expected output is 00010000
-# output is 00100000, expected output is 00100000
-# output is 01000000, expected output is 01000000
-# output is 10000000, expected output is 10000000
-# output is 00000000, expected output is 00000000
-# output is 00000000, expected output is 00000000
-# output is 00000000, expected output is 00000000
-# output is 00000000, expected output is 00000000
-# output is 00100000, expected output is 00000000
-# ** Note: $stop    : C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin_tb.v(125)
-#    Time: 65 ps  Iteration: 0  Instance: /detectwin_tb
-# Break in Module detectwin_tb at C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin_tb.v line 125
-quit -sim
+# Compile of tictactoe_to_vga.v was successful.
+# Compile of vga.v was successful.
+# 10 compiles, 0 failed with no errors.
 vsim -gui work.TestTic
-# End time: 21:09:21 on Jun 20,2020, Elapsed time: 0:04:58
-# Errors: 0, Warnings: 0
 # vsim -gui work.TestTic 
-# Start time: 21:09:21 on Jun 20,2020
+# Start time: 17:58:54 on Sep 25,2020
 # Loading work.TestTic
 # Loading work.TicTacToe
 # Loading work.PlayAdjacentEdge
@@ -98,34 +82,5 @@ run -all
 # 2 2 1
 # 1 2 2
 #  
-quit -sim
-# End time: 22:08:59 on Jun 20,2020, Elapsed time: 0:59:38
+# End time: 09:52:36 on Sep 26,2020, Elapsed time: 15:53:42
 # Errors: 0, Warnings: 0
-# Error: Acs sdne.
-# k
-#        Unable to replace existing ini file (C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3.mpf).  File can not be renamed.
-# Compile of gameplay_tb.v failed with 1 errors.
-# Compile of gameplay_tb.v was successful.
-vsim -gui work.PlayAdjacentEdge_tb
-# vsim -gui work.PlayAdjacentEdge_tb 
-# Start time: 22:10:45 on Jun 20,2020
-# Loading work.PlayAdjacentEdge_tb
-# Loading work.TicTacToe
-# Loading work.PlayAdjacentEdge
-# Loading work.TwoInArray
-# Loading work.TwoInRow
-# Loading work.Empty
-# Loading work.RArb
-# Loading work.Select4
-add wave -position end  sim:/PlayAdjacentEdge_tb/xin
-add wave -position end  sim:/PlayAdjacentEdge_tb/oin
-add wave -position end  sim:/PlayAdjacentEdge_tb/xout
-add wave -position end  sim:/PlayAdjacentEdge_tb/oout
-run -all
-# 000010000 100000001 -> 000100000 | expected output = 000_100_000
-# 000010000 001000100 -> 000001000 | expected output = 000_001_000
-write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/Users/herei/Desktop/CPEN211/programs/lab3/part2_wave.do
-quit -sim
-# End time: 22:21:19 on Jun 20,2020, Elapsed time: 0:10:34
-# Errors: 0, Warnings: 0
-# Compile of gameplay_tb.v was successful.
