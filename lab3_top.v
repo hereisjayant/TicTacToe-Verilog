@@ -22,13 +22,16 @@ module lab3_top(
   wire [8:0] x, o;   // current board positions
   wire [8:0] next_o; // next position that O wants to play
   wire [7:0] win_line; // has someone won and if so along which line?
+  wire [1:0] status;
 
   // The following module instance determines the next move played by O. The
   // logic is is described in the Lab 3 handout and in Section 9.4 of Dally.
   // The TicTacToe module is purely combinational logic.  We connect "o" to
   // "xin" instead of "oin" because we want GameLogic to play for O instead
   // of X.
-  TicTacToe GameLogic( .xin(o), .oin(x), .xout(next_o) );
+  TicTacToe GameLogic( .xin(o), .oin(x), .xout(next_o), .status(status) );
+  //this gives us the output of game status on HEX0
+  sseg H0({2'b0,status},   HEX0);
 
   // The following module records past moves played by you and the module above.
   // It uses something called "sequential logic" we will learn about later.
@@ -78,4 +81,50 @@ module lab3_top(
           .VGA_B(VGA_B)
         );
 `endif
+endmodule
+//defining the codes for the HEX display
+
+  `define N0 7'b100_0000 //0
+  `define N1 7'b100_1111 //1
+  `define N2 7'b010_0100 //2
+  `define N3 7'b011_0000 //3
+  `define N4 7'b001_1001 //4
+  `define N5 7'b001_0010 //5
+  `define N6 7'b000_0010 //6
+  `define N7 7'b111_1000 //7
+  `define N8 7'b000_0000 //8
+  `define N9 7'b001_0000 //9
+
+module sseg(in,segs);
+  input [3:0] in;
+  output [6:0] segs;
+
+  reg [6:0] segs;
+
+  //    0000
+  //   5    1
+  //   5    1
+  //    6666
+  //   4    2
+  //   4    2
+  //    3333
+  //
+
+
+  always @ ( * ) begin
+    case (in)
+      7'd0: segs = `N0;
+      7'd1: segs = `N1;
+      7'd2: segs = `N2;
+      7'd3: segs = `N3;
+      7'd4: segs = `N4;
+      7'd5: segs = `N5;
+      7'd6: segs = `N6;
+      7'd7: segs = `N7;
+      7'd8: segs = `N8;
+      7'd9: segs = `N9;
+      default: segs = 7'b0001110;  // this will output "F"
+    endcase
+  end
+
 endmodule

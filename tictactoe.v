@@ -86,17 +86,52 @@ module RArb(r, g) ;
 endmodule // RArb
 
 //Figure 9.12
-module TicTacToe(xin, oin, xout) ;
+module TicTacToe(xin, oin, xout, status) ;
   input [8:0] xin, oin ;
   output [8:0] xout ;
+  output [1:0] status;
   wire [8:0] adedge, win, block, empty ;
 
   PlayAdjacentEdge addedgex(xin, oin, adedge);
   TwoInArray winx(xin, oin, win) ;           // win if we can
   TwoInArray blockx(oin, xin, block) ;       // try to block o from winning
   Empty      emptyx(~(oin | xin), empty) ;   // otherwise pick empty space
-  Select4    comb(adedge ,win, block, empty, xout) ; // pick highest priority
+  Select4    comb(win, adedge, block, empty, xout) ; // pick highest priority
+  checkStatus status_checker(xin, oin, status); //this checks the game status
+
 endmodule // TicTacToe
+
+module checkStatus(xin, oin, status);
+  input [8:0] xin, oin;
+  output [1:0] status;
+
+  reg [1:0] status;
+  wire [7:0] winx_ln;
+  wire [7:0] wino_ln;
+
+//used for draw, if all positions are 1 ipAND would be 1
+  wire ipAND = &(xin & oin);
+  wire ipOR = &(xin | oin);
+  //checks if x wins or o wins
+  check_win win_x(xin, winx_ln);
+  check_win win_o(oin, wino_ln);
+
+  always @ ( * ) begin
+    casex ({|winx_ln, |wino_ln, ipAND, ipOR})
+    //case when the DUT Wins
+    {1'b1,1'b0,1'bx, 1'bx}: status = 2'b10 ;
+    //case when the DUT loses:
+    {1'b0,1'b1, 1'bx, 1'bx}: status = 2'b01;
+    //case when the game is a tie:
+    {1'b0, 1'b0, 1'bx, 1'b1}: status = 2'b11;
+    //case where the game is still on:
+    {1'b0, 1'b0, 1'b0, 1'bx}: status = 2'b00;
+      default: status = 2'bxx;
+    endcase
+  end
+
+
+endmodule
 
 module PlayAdjacentEdge(ain, bin, cout );
   input [8:0] ain, bin;

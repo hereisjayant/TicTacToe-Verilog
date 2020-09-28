@@ -1,5 +1,5 @@
 Flow report for lab3_top
-Sun Sep 27 23:22:56 2020
+Mon Sep 28 12:51:17 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Sep 27 23:22:18 2020       ;
+; Flow Status                     ; Successful - Mon Sep 28 12:50:50 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab3_top                                    ;
 ; Top-level Entity Name           ; lab3_top                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 407 / 32,070 ( 1 % )                        ;
-; Total registers                 ; 269                                         ;
+; Logic utilization (in ALMs)     ; 415 / 32,070 ( 1 % )                        ;
+; Total registers                 ; 276                                         ;
 ; Total pins                      ; 96 / 457 ( 21 % )                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 35,968 / 4,065,280 ( < 1 % )                ;
@@ -67,7 +67,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/27/2020 23:17:55 ;
+; Start date & time ; 09/28/2020 12:47:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab3_top            ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 66325066569954.160122887301536         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 66325066569954.160127743604304         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -93,11 +93,11 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:01:03     ; 1.0                     ; 4870 MB             ; 00:01:39                           ;
-; Fitter               ; 00:02:35     ; 1.0                     ; 6667 MB             ; 00:03:35                           ;
-; Assembler            ; 00:00:34     ; 1.0                     ; 4850 MB             ; 00:00:25                           ;
-; Timing Analyzer      ; 00:00:34     ; 1.2                     ; 5202 MB             ; 00:00:31                           ;
-; Total                ; 00:04:46     ; --                      ; --                  ; 00:06:10                           ;
+; Analysis & Synthesis ; 00:00:49     ; 1.0                     ; 4873 MB             ; 00:01:30                           ;
+; Fitter               ; 00:02:16     ; 1.1                     ; 6687 MB             ; 00:03:45                           ;
+; Assembler            ; 00:00:23     ; 1.0                     ; 4846 MB             ; 00:00:22                           ;
+; Timing Analyzer      ; 00:00:25     ; 1.3                     ; 5200 MB             ; 00:00:29                           ;
+; Total                ; 00:03:53     ; --                      ; --                  ; 00:06:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
