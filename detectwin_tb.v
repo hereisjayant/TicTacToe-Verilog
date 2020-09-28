@@ -116,7 +116,7 @@ module detectwin_tb ();
 
       // Case 13:  expected output win_line = 0 means no winners
       bin= 9'b010_001_101;
-      ain= 9'b101_001_101;
+      ain= 9'b101_110_010;
       // wait five simulation timesteps to allow those changes to happen
       #5;
       // print the current values to the Modelsim command line

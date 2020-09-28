@@ -9,7 +9,7 @@ z2
 cModel Technology
 dC:/Users/herei/Desktop/CPEN211/programs/lab1
 valtera_up_avalon_video_vga_timing
-Z0 !s110 1601229144
+Z0 !s110 1601267650
 !i10b 1
 !s100 jgDZ_i]hm02j6<?IS`^_V3
 IED^`7[ib2e3dVN]@jP@Fd2
@@ -23,28 +23,28 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1601229144.000000
+Z5 !s108 1601267649.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/vga.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/vga.v|
 !i113 1
 Z6 o-work work
 Z7 tCvgOpt 0
 vcheck_win
-Z8 !s110 1601229145
+R0
 !i10b 1
 !s100 I;`0VPdMG_6FK1]GgKYaM0
 IN?cj0eGFk7F1J?ePhi2]a2
 R1
 R2
 R3
-Z9 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v
-Z10 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v
+Z8 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v
+Z9 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v
 L0 25
 R4
 r1
 !s85 0
 31
-R5
+Z10 !s108 1601267650.000000
 Z11 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v|
 Z12 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v|
 !i113 1
@@ -53,7 +53,7 @@ R7
 vde1_gui
 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 DXx6 sv_std 7 mti_fli 0 22 N`967G9WZ3=6fdOR5MX]S1
-Z13 !s110 1601229141
+!s110 1601267646
 !i10b 1
 !s100 ?D==VDW`35O1[ZJ6<4^mF1
 I7W2oS::;:d9WZmANKPAg10
@@ -61,7 +61,7 @@ R1
 !s105 lab3_gui_sv_unit
 S1
 R2
-Z14 w1601221399
+Z13 w1601266858
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_gui.sv
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_gui.sv
 L0 4
@@ -69,20 +69,20 @@ R4
 r1
 !s85 0
 31
-Z15 !s108 1601229141.000000
+!s108 1601267646.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_gui.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_gui.sv|
 !i113 1
 o-work work -sv
 R7
 vdetectwin_tb
-!s110 1601229139
+!s110 1601267651
 !i10b 1
-!s100 ]Xne1Me;jgcVNRVJHQQXc3
-I4H5keID7<BN@W0ENJRlMD0
+!s100 GzK``PFf17N;oIjJPD8IK0
+IA[HBnoE;[ZY@GDBHI?`Kl1
 R1
 R2
-R3
+w1601267638
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin_tb.v
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin_tb.v
 L0 1
@@ -90,28 +90,28 @@ R4
 r1
 !s85 0
 31
-Z16 !s108 1601229139.000000
+R10
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin_tb.v|
 !i113 1
 R6
 R7
 vDetectWinner
-R8
+R0
 !i10b 1
 !s100 RLeYjTiBRBjgbB49cV;FX0
 I:cCi47l6lUGaeH`P[]J722
 R1
 R2
 R3
+R8
 R9
-R10
 L0 16
 R4
 r1
 !s85 0
 31
-R5
+R10
 R11
 R12
 !i113 1
@@ -119,56 +119,56 @@ R6
 R7
 n@detect@winner
 vEmpty
-Z17 !s110 1601229143
+Z14 !s110 1601267648
 !i10b 1
 !s100 VHh4g6Pk;UGjNV:6E]^Sn0
 I?]CX8j3>R5WQTBSa_GiD32
 R1
 R2
 R3
-Z18 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v
-Z19 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v
+Z15 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v
+Z16 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v
 L0 160
 R4
 r1
 !s85 0
 31
-Z20 !s108 1601229143.000000
-Z21 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v|
-Z22 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v|
+Z17 !s108 1601267648.000000
+Z18 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v|
+Z19 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v|
 !i113 1
 R6
 R7
 n@empty
 vframebuffer
-R0
+Z20 !s110 1601267649
 !i10b 1
 !s100 XFkJkBY4a@D[2k;IHb`Ol3
 IHJoTRj18lzmL`7SPYz`Ib3
 R1
 R2
 R3
-Z23 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v
-Z24 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v
+Z21 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v
+Z22 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v
 L0 252
 R4
 r1
 !s85 0
 31
 R5
-Z25 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v|
-Z26 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v|
+Z23 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v|
+Z24 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v|
 !i113 1
 R6
 R7
 vgameplay_tb
-R13
+!s110 1601270375
 !i10b 1
-!s100 =[[MS;:n>gjPclim5Q5FL2
-IBiX;8ne9o?ankZ?[igggh2
+!s100 bPdhmaXO4PlmS1BS7PP>I0
+IM<G=S58c8BDa_[:3Gl<jh1
 R1
 R2
-R3
+w1601270323
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/gameplay_tb.v
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/gameplay_tb.v
 L0 1
@@ -176,14 +176,14 @@ R4
 r1
 !s85 0
 31
-R15
+!s108 1601270375.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/gameplay_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/gameplay_tb.v|
 !i113 1
 R6
 R7
 vGameState
-Z27 !s110 1601229140
+Z25 !s110 1601267652
 !i10b 1
 !s100 `Gk?ZLhb;A[aDh2UUUPH>2
 I3ZEGGDc<=YMQVSi2k8zKW3
@@ -197,7 +197,7 @@ R4
 r1
 !s85 0
 31
-!s108 1601229140.000000
+!s108 1601267652.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/game_state.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/game_state.v|
 !i113 1
@@ -205,7 +205,7 @@ R6
 R7
 n@game@state
 vlab3_RArb_tb
-R17
+R14
 !i10b 1
 !s100 Z1Z<9fh3@PZXDOYC474do1
 ImI?f[dT]_HBhkeXDjMmZ60
@@ -219,7 +219,7 @@ R4
 r1
 !s85 0
 31
-R20
+R17
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/RArb_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/RArb_tb.v|
 !i113 1
@@ -227,7 +227,7 @@ R6
 R7
 nlab3_@r@arb_tb
 vlab3_top
-Z28 !s110 1601229142
+Z26 !s110 1601267647
 !i10b 1
 !s100 54J:Y0oa`:2I5TSnO97Rn3
 InWBf_54hgF<^=McTT>?BP0
@@ -241,20 +241,20 @@ R4
 r1
 !s85 0
 31
-Z29 !s108 1601229142.000000
+Z27 !s108 1601267647.000000
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v|
 !i113 1
 R6
 R7
 vlab3_top_tb
-R28
+R26
 !i10b 1
 !s100 z0onm^m3@z6BmO_HkgK_i3
 I^e8M=I?ef8Zje71S3]9OH3
 R1
 R2
-R14
+R13
 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top_tb.v
 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top_tb.v
 L0 5
@@ -262,30 +262,30 @@ R4
 r1
 !s85 0
 31
-R29
+R27
 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top_tb.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top_tb.v|
 !i113 1
 R6
 R7
 vPlayAdjacentEdge
-R17
+R14
 !i10b 1
 !s100 nKX8?amO@5:=YiQ;eShEg1
 IJKfTilQTDen24_H=bGho72
 R1
 R2
 R3
-R18
-R19
+R15
+R16
 L0 101
 R4
 r1
 !s85 0
 31
-R20
-R21
-R22
+R17
+R18
+R19
 !i113 1
 R6
 R7
@@ -296,7 +296,7 @@ vPlayAdjacentEdge_tb
 !s100 WFU:QlDk3Xoa:IQ^heDgG1
 IR<zJ12VT^2bBC;HibSV=;1
 R1
-Z30 dC:/Users/herei/Desktop/CPEN211/programs/lab3
+Z28 dC:/Users/herei/Desktop/CPEN211/programs/lab3
 w1592671225
 8C:/Users/herei/Desktop/CPEN211/programs/lab3/gameplay_tb.v
 FC:/Users/herei/Desktop/CPEN211/programs/lab3/gameplay_tb.v
@@ -313,88 +313,88 @@ R6
 R7
 n@play@adjacent@edge_tb
 vRAM
-R27
+R25
 !i10b 1
 !s100 :g:cBam^K7GjYMDnEG?mj2
 IS6L2AIU<nazz`iW;WMjWW1
 R1
 R2
 R3
-Z31 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v
-Z32 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v
+Z29 8C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v
+Z30 FC:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v
 L0 83
 R4
 r1
 !s85 0
 31
-R16
-Z33 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v|
-Z34 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v|
+Z31 !s108 1601267651.000000
+Z32 !s107 C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v|
+Z33 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v|
 !i113 1
 R6
 R7
 n@r@a@m
 vRArb
-R17
+R14
 !i10b 1
 !s100 hJUM9E38fC0H]hRc`hMZM2
 I[^@WhP1VU8BAzk<bh^3F^3
 R1
 R2
 R3
-R18
-R19
+R15
+R16
 L0 80
 R4
 r1
 !s85 0
 31
-R20
-R21
-R22
+R17
+R18
+R19
 !i113 1
 R6
 R7
 n@r@arb
 vrasterizer
-R0
+R20
 !i10b 1
 !s100 gaYl9Vbogzl4`c1TMnVc@2
 Im8gOcC;lg=iGmGYL3RM`40
 R1
 R2
 R3
-R23
-R24
+R21
+R22
 L0 79
 R4
 r1
 !s85 0
 31
 R5
-R25
-R26
+R23
+R24
 !i113 1
 R6
 R7
 vROM
-R27
+R25
 !i10b 1
 !s100 aQ>F0@_^;f4_aZZ1<=WMj3
 ICIhKJZHKgPDGafdL]>bJ@1
 R1
 R2
 R3
-R31
-R32
+R29
+R30
 L0 62
 R4
 r1
 !s85 0
 31
-R16
+R31
+R32
 R33
-R34
 !i113 1
 R6
 R7
@@ -405,7 +405,7 @@ vSelect3
 !s100 Sl0kR5PiA^e[Xz^Wz:Do91
 I4K[A2S`TdbTNe9D_lgMfM0
 R1
-R30
+R28
 w1589221937
 8C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v
 FC:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v
@@ -422,198 +422,198 @@ R6
 R7
 n@select3
 vSelect4
-R17
+R14
 !i10b 1
 !s100 mcg4IcN:OJU0:gocYYdl00
 IX]Y`Z0XQ6TC47[A3?h35P2
 R1
 R2
 R3
-R18
-R19
+R15
+R16
 L0 169
 R4
 r1
 !s85 0
 31
-R20
-R21
-R22
+R17
+R18
+R19
 !i113 1
 R6
 R7
 n@select4
 vTestTic
-R17
+R14
 !i10b 1
 !s100 ZDNROFkgVN[LjY65kYR=13
 INGPmHj@?;z3n]b7IcVokH0
 R1
 R2
 R3
-R18
-R19
+R15
+R16
 L0 180
 R4
 r1
 !s85 0
 31
-R20
-R21
-R22
+R17
+R18
+R19
 !i113 1
 R6
 R7
 n@test@tic
 vTicTacToe
-R17
+R14
 !i10b 1
 !s100 h3iGeI^CNSHYkX]U]WScI2
 I;8i>Bz[39n`NaUMM]hjb_3
 R1
 R2
 R3
-R18
-R19
+R15
+R16
 L0 89
 R4
 r1
 !s85 0
 31
-R20
-R21
-R22
+R17
+R18
+R19
 !i113 1
 R6
 R7
 n@tic@tac@toe
 vtictactoe_shader
-R0
+R20
 !i10b 1
 !s100 07;AOKi^DcNGhdfKY=m810
 I7X0FfTN9nnWUFhR5J]dAa2
 R1
 R2
 R3
-R23
-R24
+R21
+R22
 L0 118
 R4
 r1
 !s85 0
 31
 R5
-R25
-R26
+R23
+R24
 !i113 1
 R6
 R7
 vTicTacToe_to_VGA
-R0
+R20
 !i10b 1
 !s100 TC9cme8z4HAe?<7<neReH3
 Iz?PK?Ezk_9CCG>?LfU1`E0
 R1
 R2
 R3
-R23
-R24
+R21
+R22
 L0 30
 R4
 r1
 !s85 0
 31
 R5
-R25
-R26
+R23
+R24
 !i113 1
 R6
 R7
 n@tic@tac@toe_to_@v@g@a
 vTwoInArray
-R17
+R14
 !i10b 1
 !s100 J8QUPi]lgi>21=gbkK?jl1
 I=[gSHPXZWRk9OzJnbJd[f3
 R1
 R2
 R3
-R18
-R19
+R15
+R16
 L0 116
 R4
 r1
 !s85 0
 31
-R20
-R21
-R22
+R17
+R18
+R19
 !i113 1
 R6
 R7
 n@two@in@array
 vTwoInRow
-R17
+R14
 !i10b 1
 !s100 ?Vf87kdFGB5Qe<^h?ZHJQ3
 InLUMhEEJQ:2eK@d5NlU7W1
 R1
 R2
 R3
-R18
-R19
+R15
+R16
 L0 150
 R4
 r1
 !s85 0
 31
-R20
-R21
-R22
+R17
+R18
+R19
 !i113 1
 R6
 R7
 n@two@in@row
 vvDFF
-R27
+R25
 !i10b 1
 !s100 IOzeoJ4^ReEE4K3Fnoj<V2
 IHcZIf<?k][;Oo9eI92:iz1
 R1
 R2
 R3
-R31
-R32
+R29
+R30
 L0 35
 R4
 r1
 !s85 0
 31
-R16
+R31
+R32
 R33
-R34
 !i113 1
 R6
 R7
 nv@d@f@f
 vvDFFE
-R27
+R25
 !i10b 1
 !s100 ^30A^^mPGCM3[Yl8<J[oo1
 I@KA;f;<5J[hl1F;;EC?;Z2
 R1
 R2
 R3
-R31
-R32
+R29
+R30
 L0 48
 R4
 r1
 !s85 0
 31
-R16
+R31
+R32
 R33
-R34
 !i113 1
 R6
 R7
