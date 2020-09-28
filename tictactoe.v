@@ -92,6 +92,7 @@ module TicTacToe(xin, oin, xout, status) ;
   output [1:0] status;
   wire [8:0] adedge, win, block, empty ;
 
+
   PlayAdjacentEdge addedgex(xin, oin, adedge);
   TwoInArray winx(xin, oin, win) ;           // win if we can
   TwoInArray blockx(oin, xin, block) ;       // try to block o from winning
@@ -141,6 +142,9 @@ module PlayAdjacentEdge(ain, bin, cout );
     casex( {ain, bin} )
       18'b000_010_000__100_000_001: cout = 9'b000_100_000;  //checks the first case
       18'b000_010_000__001_000_100: cout = 9'b000_001_000;  //checks the the other case case
+
+      //NOTE: the following case is not a part of PlayAdjacentEdge, its for the bonus:
+      18'b000_010_000__010_000_001: cout = 9'b001_000_000;
       default: cout = 9'b0; //if the preconditions are not met, does nothing!
     endcase
   end
