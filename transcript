@@ -1,22 +1,11 @@
 # Reading C:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # OpenFile C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3.mpf
 # Loading project lab3
-# 0 compiles, 10 failed with no errors.
-# Compile of detectwin.v was successful.
-# Compile of detectwin_tb.v was successful.
-# Compile of ff.v was successful.
-# Compile of game_state.v was successful.
-# Compile of gameplay_tb.v was successful.
-# Compile of lab3_top.v was successful.
-# Compile of RArb_tb.v was successful.
-# Compile of tictactoe.v was successful.
-# Compile of tictactoe_to_vga.v was successful.
-# Compile of vga.v was successful.
-# 10 compiles, 0 failed with no errors.
-vsim -gui work.TestTic
-# vsim -gui work.TestTic 
-# Start time: 17:58:54 on Sep 25,2020
-# Loading work.TestTic
+vsim lab3_top_tb; source lab3_gui.tcl; run
+# vsim lab3_top_tb 
+# Start time: 23:36:00 on Sep 27,2020
+# Loading work.lab3_top_tb
+# Loading work.lab3_top
 # Loading work.TicTacToe
 # Loading work.PlayAdjacentEdge
 # Loading work.TwoInArray
@@ -24,63 +13,10 @@ vsim -gui work.TestTic
 # Loading work.Empty
 # Loading work.RArb
 # Loading work.Select4
-add wave -position end  sim:/TestTic/xin
-add wave -position end  sim:/TestTic/oin
-add wave -position end  sim:/TestTic/xout
-add wave -position end  sim:/TestTic/oout
-run -all
-# 000000000 000000000 -> 000010000
-# 000000101 000000000 -> 000000010
-# 000000101 000000010 -> 000010000
-# 000000000 000100100 -> 100000000
-# 000000000 000010100 -> 001000000
-# 0 0 0
-# 0 0 0
-# 0 0 0
-#  
-# 0 0 0
-# 0 2 0
-# 0 0 0
-#  
-# 1 0 0
-# 0 2 0
-# 0 0 0
-#  
-# 1 0 2
-# 0 2 0
-# 0 0 0
-#  
-# 1 0 2
-# 0 2 0
-# 1 0 0
-#  
-# 1 0 2
-# 2 2 0
-# 1 0 0
-#  
-# 1 0 2
-# 2 2 1
-# 1 0 0
-#  
-# 1 0 2
-# 2 2 1
-# 1 0 2
-#  
-# 1 1 2
-# 2 2 1
-# 1 0 2
-#  
-# 1 1 2
-# 2 2 1
-# 1 2 2
-#  
-# 1 1 2
-# 2 2 1
-# 1 2 2
-#  
-# 1 1 2
-# 2 2 1
-# 1 2 2
-#  
-# End time: 09:52:36 on Sep 26,2020, Elapsed time: 15:53:42
-# Errors: 0, Warnings: 0
+# Loading work.GameState
+# Loading work.vDFF
+# Loading work.DetectWinner
+# Loading work.check_win
+# Loading sv_std.std
+# Loading sv_std.mti_fli
+# Loading work.de1_gui

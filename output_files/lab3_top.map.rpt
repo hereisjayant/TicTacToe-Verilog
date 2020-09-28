@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab3_top
-Sat Jun 20 22:23:50 2020
+Sun Sep 27 23:18:58 2020
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -91,14 +91,14 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sat Jun 20 22:23:49 2020       ;
+; Analysis & Synthesis Status     ; Successful - Sun Sep 27 23:18:58 2020       ;
 ; Quartus Prime Version           ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                   ; lab3_top                                    ;
 ; Top-level Entity Name           ; lab3_top                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 255                                         ;
-; Total pins                      ; 54                                          ;
+; Total pins                      ; 96                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 35,968                                      ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -217,55 +217,55 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                         ;
-+---------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path      ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                       ; Library ;
-+---------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------+---------+
-; vga.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN211/programs/lab3/vga.v                                 ;         ;
-; tictactoe_to_vga.v                    ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v                    ;         ;
-; tictactoe.v                           ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v                           ;         ;
-; lab3_top.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v                            ;         ;
-; game_state.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN211/programs/lab3/game_state.v                          ;         ;
-; ff.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v                                  ;         ;
-; detectwin.v                           ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v                           ;         ;
-; altera_pll.v                          ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/altera_pll.v                            ;         ;
-; dcfifo.tdf                            ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/dcfifo.tdf                              ;         ;
-; lpm_counter.inc                       ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/lpm_counter.inc                         ;         ;
-; lpm_add_sub.inc                       ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/lpm_add_sub.inc                         ;         ;
-; altdpram.inc                          ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/altdpram.inc                            ;         ;
-; a_graycounter.inc                     ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/a_graycounter.inc                       ;         ;
-; a_fefifo.inc                          ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/a_fefifo.inc                            ;         ;
-; a_gray2bin.inc                        ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/a_gray2bin.inc                          ;         ;
-; dffpipe.inc                           ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/dffpipe.inc                             ;         ;
-; alt_sync_fifo.inc                     ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/alt_sync_fifo.inc                       ;         ;
-; lpm_compare.inc                       ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/lpm_compare.inc                         ;         ;
-; altsyncram_fifo.inc                   ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/altsyncram_fifo.inc                     ;         ;
-; aglobal181.inc                        ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/aglobal181.inc                          ;         ;
-; db/dcfifo_b3q1.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf                    ;         ;
-; db/a_gray2bin_f9b.tdf                 ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/a_gray2bin_f9b.tdf                 ;         ;
-; db/a_graycounter_cg6.tdf              ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/a_graycounter_cg6.tdf              ;         ;
-; db/a_graycounter_8ub.tdf              ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/a_graycounter_8ub.tdf              ;         ;
-; db/altsyncram_7b81.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/altsyncram_7b81.tdf                ;         ;
-; db/alt_synch_pipe_g9l.tdf             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/alt_synch_pipe_g9l.tdf             ;         ;
-; db/dffpipe_1v8.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dffpipe_1v8.tdf                    ;         ;
-; db/dffpipe_0v8.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dffpipe_0v8.tdf                    ;         ;
-; db/alt_synch_pipe_h9l.tdf             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/alt_synch_pipe_h9l.tdf             ;         ;
-; db/dffpipe_2v8.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dffpipe_2v8.tdf                    ;         ;
-; db/cmpr_su5.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/cmpr_su5.tdf                       ;         ;
-; db/mux_5r7.tdf                        ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/mux_5r7.tdf                        ;         ;
-; altsyncram.tdf                        ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/altsyncram.tdf                          ;         ;
-; stratix_ram_block.inc                 ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/stratix_ram_block.inc                   ;         ;
-; lpm_mux.inc                           ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/lpm_mux.inc                             ;         ;
-; lpm_decode.inc                        ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/lpm_decode.inc                          ;         ;
-; a_rdenreg.inc                         ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/a_rdenreg.inc                           ;         ;
-; altrom.inc                            ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/altrom.inc                              ;         ;
-; altram.inc                            ; yes             ; Megafunction                                          ; f:/cpen211/quartus/libraries/megafunctions/altram.inc                              ;         ;
-; db/altsyncram_src1.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/altsyncram_src1.tdf                ;         ;
-; db/lab3_top.ram0_rom_d8c22375.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/lab3_top.ram0_rom_d8c22375.hdl.mif ;         ;
-; db/altsyncram_tuc1.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/altsyncram_tuc1.tdf                ;         ;
-; db/lab3_top.ram0_rom_9bf1e8c1.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/herei/Desktop/CPEN211/programs/lab3/db/lab3_top.ram0_rom_9bf1e8c1.hdl.mif ;         ;
-+---------------------------------------+-----------------+-------------------------------------------------------+------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                              ;
++---------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path      ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                            ; Library ;
++---------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
+; vga.v                                 ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/vga.v                                 ;         ;
+; tictactoe_to_vga.v                    ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v                    ;         ;
+; tictactoe.v                           ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v                           ;         ;
+; lab3_top.v                            ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v                            ;         ;
+; game_state.v                          ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/game_state.v                          ;         ;
+; ff.v                                  ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v                                  ;         ;
+; detectwin.v                           ; yes             ; User Verilog HDL File                                 ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v                           ;         ;
+; altera_pll.v                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altera_pll.v                                                     ;         ;
+; dcfifo.tdf                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dcfifo.tdf                                                       ;         ;
+; lpm_counter.inc                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.inc                                                  ;         ;
+; lpm_add_sub.inc                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_add_sub.inc                                                  ;         ;
+; altdpram.inc                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altdpram.inc                                                     ;         ;
+; a_graycounter.inc                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_graycounter.inc                                                ;         ;
+; a_fefifo.inc                          ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_fefifo.inc                                                     ;         ;
+; a_gray2bin.inc                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_gray2bin.inc                                                   ;         ;
+; dffpipe.inc                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dffpipe.inc                                                      ;         ;
+; alt_sync_fifo.inc                     ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/alt_sync_fifo.inc                                                ;         ;
+; lpm_compare.inc                       ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_compare.inc                                                  ;         ;
+; altsyncram_fifo.inc                   ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram_fifo.inc                                              ;         ;
+; aglobal181.inc                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/aglobal181.inc                                                   ;         ;
+; db/dcfifo_b3q1.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf                    ;         ;
+; db/a_gray2bin_f9b.tdf                 ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/a_gray2bin_f9b.tdf                 ;         ;
+; db/a_graycounter_cg6.tdf              ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/a_graycounter_cg6.tdf              ;         ;
+; db/a_graycounter_8ub.tdf              ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/a_graycounter_8ub.tdf              ;         ;
+; db/altsyncram_7b81.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/altsyncram_7b81.tdf                ;         ;
+; db/alt_synch_pipe_g9l.tdf             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/alt_synch_pipe_g9l.tdf             ;         ;
+; db/dffpipe_1v8.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dffpipe_1v8.tdf                    ;         ;
+; db/dffpipe_0v8.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dffpipe_0v8.tdf                    ;         ;
+; db/alt_synch_pipe_h9l.tdf             ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/alt_synch_pipe_h9l.tdf             ;         ;
+; db/dffpipe_2v8.tdf                    ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dffpipe_2v8.tdf                    ;         ;
+; db/cmpr_su5.tdf                       ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/cmpr_su5.tdf                       ;         ;
+; db/mux_5r7.tdf                        ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/mux_5r7.tdf                        ;         ;
+; altsyncram.tdf                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altsyncram.tdf                                                   ;         ;
+; stratix_ram_block.inc                 ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/stratix_ram_block.inc                                            ;         ;
+; lpm_mux.inc                           ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.inc                                                      ;         ;
+; lpm_decode.inc                        ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.inc                                                   ;         ;
+; a_rdenreg.inc                         ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/a_rdenreg.inc                                                    ;         ;
+; altrom.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altrom.inc                                                       ;         ;
+; altram.inc                            ; yes             ; Megafunction                                          ; c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/altram.inc                                                       ;         ;
+; db/altsyncram_src1.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/altsyncram_src1.tdf                ;         ;
+; db/lab3_top.ram0_rom_d8c22375.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/lab3_top.ram0_rom_d8c22375.hdl.mif ;         ;
+; db/altsyncram_tuc1.tdf                ; yes             ; Auto-Generated Megafunction                           ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/altsyncram_tuc1.tdf                ;         ;
+; db/lab3_top.ram0_rom_9bf1e8c1.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/lab3_top.ram0_rom_9bf1e8c1.hdl.mif ;         ;
++---------------------------------------+-----------------+-------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -284,7 +284,7 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 255            ;
 ;                                             ;                ;
-; I/O pins                                    ; 54             ;
+; I/O pins                                    ; 96             ;
 ; Total MLAB memory bits                      ; 0              ;
 ; Total block memory bits                     ; 35968          ;
 ;                                             ;                ;
@@ -295,8 +295,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 218            ;
-; Total fan-out                               ; 4383           ;
-; Average fan-out                             ; 4.14           ;
+; Total fan-out                               ; 4425           ;
+; Average fan-out                             ; 3.87           ;
 +---------------------------------------------+----------------+
 
 
@@ -305,7 +305,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                       ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                        ; Entity Name                       ; Library Name ;
 +--------------------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |lab3_top                                        ; 637 (3)             ; 255 (0)                   ; 35968             ; 0          ; 54   ; 0            ; |lab3_top                                                                                                                                  ; lab3_top                          ; work         ;
+; |lab3_top                                        ; 637 (3)             ; 255 (0)                   ; 35968             ; 0          ; 96   ; 0            ; |lab3_top                                                                                                                                  ; lab3_top                          ; work         ;
 ;    |DetectWinner:Wins|                           ; 132 (74)            ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins                                                                                                                ; DetectWinner                      ; work         ;
 ;       |check_win:win_a|                          ; 34 (34)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins|check_win:win_a                                                                                                ; check_win                         ; work         ;
 ;       |check_win:win_b|                          ; 24 (24)             ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |lab3_top|DetectWinner:Wins|check_win:win_b                                                                                                ; check_win                         ; work         ;
@@ -1401,7 +1401,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;         1 data inputs ; 2                           ;
 ;         2 data inputs ; 16                          ;
 ;         3 data inputs ; 1                           ;
-; boundary_port         ; 54                          ;
+; boundary_port         ; 96                          ;
 ; generic_pll           ; 1                           ;
 ; stratixv_ram_block    ; 57                          ;
 ;                       ;                             ;
@@ -1415,7 +1415,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:10     ;
+; Top            ; 00:00:09     ;
 +----------------+--------------+
 
 
@@ -1425,83 +1425,91 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sat Jun 20 22:22:47 2020
+    Info: Processing started: Sun Sep 27 23:17:52 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab3 -c lab3_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file vga.v
-    Info (12023): Found entity 1: altera_up_avalon_video_vga_timing File: C:/Users/herei/Desktop/CPEN211/programs/lab3/vga.v Line: 32
+    Info (12023): Found entity 1: altera_up_avalon_video_vga_timing File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/vga.v Line: 32
 Info (12021): Found 4 design units, including 4 entities, in source file tictactoe_to_vga.v
-    Info (12023): Found entity 1: TicTacToe_to_VGA File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 30
-    Info (12023): Found entity 2: rasterizer File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 79
-    Info (12023): Found entity 3: tictactoe_shader File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 118
-    Info (12023): Found entity 4: framebuffer File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 252
+    Info (12023): Found entity 1: TicTacToe_to_VGA File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 30
+    Info (12023): Found entity 2: rasterizer File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 79
+    Info (12023): Found entity 3: tictactoe_shader File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 118
+    Info (12023): Found entity 4: framebuffer File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 252
 Info (12021): Found 8 design units, including 8 entities, in source file tictactoe.v
-    Info (12023): Found entity 1: RArb File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 80
-    Info (12023): Found entity 2: TicTacToe File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 89
-    Info (12023): Found entity 3: PlayAdjacentEdge File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 101
-    Info (12023): Found entity 4: TwoInArray File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 116
-    Info (12023): Found entity 5: TwoInRow File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 150
-    Info (12023): Found entity 6: Empty File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 160
-    Info (12023): Found entity 7: Select4 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 169
-    Info (12023): Found entity 8: TestTic File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 180
+    Info (12023): Found entity 1: RArb File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 80
+    Info (12023): Found entity 2: TicTacToe File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 89
+    Info (12023): Found entity 3: PlayAdjacentEdge File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 101
+    Info (12023): Found entity 4: TwoInArray File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 116
+    Info (12023): Found entity 5: TwoInRow File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 150
+    Info (12023): Found entity 6: Empty File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 160
+    Info (12023): Found entity 7: Select4 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 169
+    Info (12023): Found entity 8: TestTic File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 180
 Info (12021): Found 1 design units, including 1 entities, in source file rarb_tb.v
-    Info (12023): Found entity 1: lab3_RArb_tb File: C:/Users/herei/Desktop/CPEN211/programs/lab3/RArb_tb.v Line: 1
+    Info (12023): Found entity 1: lab3_RArb_tb File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/RArb_tb.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file lab3_top.v
-    Info (12023): Found entity 1: lab3_top File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 1
+    Info (12023): Found entity 1: lab3_top File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file game_state.v
-    Info (12023): Found entity 1: GameState File: C:/Users/herei/Desktop/CPEN211/programs/lab3/game_state.v Line: 1
+    Info (12023): Found entity 1: GameState File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/game_state.v Line: 1
 Info (12021): Found 4 design units, including 4 entities, in source file ff.v
-    Info (12023): Found entity 1: vDFF File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 35
-    Info (12023): Found entity 2: vDFFE File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 48
-    Info (12023): Found entity 3: ROM File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 62
-    Info (12023): Found entity 4: RAM File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 83
+    Info (12023): Found entity 1: vDFF File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 35
+    Info (12023): Found entity 2: vDFFE File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 48
+    Info (12023): Found entity 3: ROM File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 62
+    Info (12023): Found entity 4: RAM File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 83
 Info (12021): Found 2 design units, including 2 entities, in source file detectwin.v
-    Info (12023): Found entity 1: DetectWinner File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 16
-    Info (12023): Found entity 2: check_win File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 25
-Warning (10236): Verilog HDL Implicit Net warning at tictactoe_to_vga.v(298): created implicit net for "VGA_CLOCK" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 298
+    Info (12023): Found entity 1: DetectWinner File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 16
+    Info (12023): Found entity 2: check_win File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at tictactoe_to_vga.v(298): created implicit net for "VGA_CLOCK" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 298
 Info (12127): Elaborating entity "lab3_top" for the top level hierarchy
-Info (12128): Elaborating entity "TicTacToe" for hierarchy "TicTacToe:GameLogic" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 25
-Info (12128): Elaborating entity "PlayAdjacentEdge" for hierarchy "TicTacToe:GameLogic|PlayAdjacentEdge:addedgex" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 94
-Info (12128): Elaborating entity "TwoInArray" for hierarchy "TicTacToe:GameLogic|TwoInArray:winx" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 95
-Info (12128): Elaborating entity "TwoInRow" for hierarchy "TicTacToe:GameLogic|TwoInArray:winx|TwoInRow:topr" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 124
-Info (12128): Elaborating entity "Empty" for hierarchy "TicTacToe:GameLogic|Empty:emptyx" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 97
-Info (12128): Elaborating entity "RArb" for hierarchy "TicTacToe:GameLogic|Empty:emptyx|RArb:ra" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 165
-Info (12128): Elaborating entity "Select4" for hierarchy "TicTacToe:GameLogic|Select4:comb" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 98
-Info (12128): Elaborating entity "RArb" for hierarchy "TicTacToe:GameLogic|Select4:comb|RArb:ra" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe.v Line: 174
-Info (12128): Elaborating entity "GameState" for hierarchy "GameState:State" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 39
-Info (12128): Elaborating entity "vDFF" for hierarchy "GameState:State|vDFF:xmov" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/game_state.v Line: 14
-Info (12128): Elaborating entity "DetectWinner" for hierarchy "DetectWinner:Wins" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 46
-Info (12128): Elaborating entity "check_win" for hierarchy "DetectWinner:Wins|check_win:win_a" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 19
-Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(30): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 30
-Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(31): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 31
-Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(32): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 32
-Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(33): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 33
-Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(34): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 34
-Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(35): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 35
-Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(36): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN211/programs/lab3/detectwin.v Line: 36
-Info (12128): Elaborating entity "TicTacToe_to_VGA" for hierarchy "TicTacToe_to_VGA:GFX" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 72
-Info (12128): Elaborating entity "rasterizer" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 45
-Info (12128): Elaborating entity "vDFF" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFF:CTRL" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 88
-Info (12128): Elaborating entity "vDFFE" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFFE:X_REG" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 92
-Info (12128): Elaborating entity "tictactoe_shader" for hierarchy "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 60
-Warning (10230): Verilog HDL assignment warning at tictactoe_to_vga.v(166): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 166
-Warning (10230): Verilog HDL assignment warning at tictactoe_to_vga.v(169): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 169
-Info (12128): Elaborating entity "ROM" for hierarchy "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:XBMP" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 179
-Warning (10850): Verilog HDL warning at ff.v(74): number of words (640) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 74
-Warning (10030): Net "rom.data_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 71
-Warning (10030): Net "rom.waddr_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 71
-Warning (10030): Net "rom.we_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 71
-Info (12128): Elaborating entity "ROM" for hierarchy "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:OBMP" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 183
-Warning (10850): Verilog HDL warning at ff.v(74): number of words (640) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 74
-Warning (10030): Net "rom.data_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 71
-Warning (10030): Net "rom.waddr_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 71
-Warning (10030): Net "rom.we_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN211/programs/lab3/ff.v Line: 71
-Info (12128): Elaborating entity "framebuffer" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 76
-Info (12128): Elaborating entity "altera_pll" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_pll:altera_pll_i" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 293
+Warning (10034): Output port "HEX0" at lab3_top.v(4) has no driver File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+Warning (10034): Output port "HEX1" at lab3_top.v(5) has no driver File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+Warning (10034): Output port "HEX2" at lab3_top.v(6) has no driver File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+Warning (10034): Output port "HEX3" at lab3_top.v(7) has no driver File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+Warning (10034): Output port "HEX4" at lab3_top.v(8) has no driver File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+Warning (10034): Output port "HEX5" at lab3_top.v(9) has no driver File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+Info (12128): Elaborating entity "TicTacToe" for hierarchy "TicTacToe:GameLogic" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 31
+Info (12128): Elaborating entity "PlayAdjacentEdge" for hierarchy "TicTacToe:GameLogic|PlayAdjacentEdge:addedgex" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 94
+Info (12128): Elaborating entity "TwoInArray" for hierarchy "TicTacToe:GameLogic|TwoInArray:winx" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 95
+Info (12128): Elaborating entity "TwoInRow" for hierarchy "TicTacToe:GameLogic|TwoInArray:winx|TwoInRow:topr" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 124
+Info (12128): Elaborating entity "Empty" for hierarchy "TicTacToe:GameLogic|Empty:emptyx" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 97
+Info (12128): Elaborating entity "RArb" for hierarchy "TicTacToe:GameLogic|Empty:emptyx|RArb:ra" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 165
+Info (12128): Elaborating entity "Select4" for hierarchy "TicTacToe:GameLogic|Select4:comb" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 98
+Info (12128): Elaborating entity "RArb" for hierarchy "TicTacToe:GameLogic|Select4:comb|RArb:ra" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe.v Line: 174
+Info (12128): Elaborating entity "GameState" for hierarchy "GameState:State" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 45
+Warning (10036): Verilog HDL or VHDL warning at game_state.v(43): object "x_pos_tcl" assigned a value but never read File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/game_state.v Line: 43
+Warning (10036): Verilog HDL or VHDL warning at game_state.v(44): object "o_pos_tcl" assigned a value but never read File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/game_state.v Line: 44
+Info (12128): Elaborating entity "vDFF" for hierarchy "GameState:State|vDFF:xmov" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/game_state.v Line: 14
+Info (12128): Elaborating entity "DetectWinner" for hierarchy "DetectWinner:Wins" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 52
+Info (12128): Elaborating entity "check_win" for hierarchy "DetectWinner:Wins|check_win:win_a" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 19
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(30): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 30
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(31): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 31
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(32): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 32
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(33): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 33
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(34): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 34
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(35): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 35
+Warning (10935): Verilog HDL Casex/Casez warning at detectwin.v(36): casex/casez item expression overlaps with a previous casex/casez item expression File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/detectwin.v Line: 36
+Info (12128): Elaborating entity "TicTacToe_to_VGA" for hierarchy "TicTacToe_to_VGA:GFX" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 79
+Info (12128): Elaborating entity "rasterizer" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 45
+Info (12128): Elaborating entity "vDFF" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFF:CTRL" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 88
+Info (12128): Elaborating entity "vDFFE" for hierarchy "TicTacToe_to_VGA:GFX|rasterizer:RASTER|vDFFE:X_REG" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 92
+Info (12128): Elaborating entity "tictactoe_shader" for hierarchy "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 60
+Warning (10230): Verilog HDL assignment warning at tictactoe_to_vga.v(166): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 166
+Warning (10230): Verilog HDL assignment warning at tictactoe_to_vga.v(169): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 169
+Info (12128): Elaborating entity "ROM" for hierarchy "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:XBMP" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 179
+Warning (10850): Verilog HDL warning at ff.v(74): number of words (640) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 74
+Warning (10030): Net "rom.data_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 71
+Warning (10030): Net "rom.waddr_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 71
+Warning (10030): Net "rom.we_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 71
+Info (12128): Elaborating entity "ROM" for hierarchy "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:OBMP" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 183
+Warning (10850): Verilog HDL warning at ff.v(74): number of words (640) in memory file does not match the number of elements in the address range [0:1023] File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 74
+Warning (10030): Net "rom.data_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 71
+Warning (10030): Net "rom.waddr_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 71
+Warning (10030): Net "rom.we_a" at ff.v(71) has no driver or initial value, using a default initial value '0' File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/ff.v Line: 71
+Info (12128): Elaborating entity "framebuffer" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 76
+Info (12128): Elaborating entity "altera_pll" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_pll:altera_pll_i" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 293
 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus
-Info (12130): Elaborated megafunction instantiation "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_pll:altera_pll_i" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 293
-Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 293
+Info (12130): Elaborated megafunction instantiation "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_pll:altera_pll_i" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 293
+Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_pll:altera_pll_i" with the following parameter: File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 293
     Info (12134): Parameter "fractional_vco_multiplier" = "false"
     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"
     Info (12134): Parameter "operation_mode" = "direct"
@@ -1511,10 +1519,10 @@ Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|framebuffer:FB|alt
     Info (12134): Parameter "duty_cycle0" = "50"
     Info (12134): Parameter "pll_type" = "General"
     Info (12134): Parameter "pll_subtype" = "General"
-Info (12128): Elaborating entity "vDFF" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|vDFF:counter" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 298
-Info (12128): Elaborating entity "dcfifo" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 318
-Info (12130): Elaborated megafunction instantiation "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 318
-Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO" with the following parameter: File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 318
+Info (12128): Elaborating entity "vDFF" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|vDFF:counter" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 298
+Info (12128): Elaborating entity "dcfifo" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 318
+Info (12130): Elaborated megafunction instantiation "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 318
+Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO" with the following parameter: File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 318
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_hint" = "MAXIMIZE_SPEED=7"
     Info (12134): Parameter "lpm_numwords" = "128"
@@ -1528,44 +1536,44 @@ Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|framebuffer:FB|dcf
     Info (12134): Parameter "use_eab" = "ON"
     Info (12134): Parameter "wrsync_delaypipe" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/dcfifo_b3q1.tdf
-    Info (12023): Found entity 1: dcfifo_b3q1 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 42
-Info (12128): Elaborating entity "dcfifo_b3q1" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated" File: f:/cpen211/quartus/libraries/megafunctions/dcfifo.tdf Line: 190
+    Info (12023): Found entity 1: dcfifo_b3q1 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 42
+Info (12128): Elaborating entity "dcfifo_b3q1" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/dcfifo.tdf Line: 190
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_gray2bin_f9b.tdf
-    Info (12023): Found entity 1: a_gray2bin_f9b File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/a_gray2bin_f9b.tdf Line: 22
-Info (12128): Elaborating entity "a_gray2bin_f9b" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|a_gray2bin_f9b:wrptr_g_gray2bin" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 54
+    Info (12023): Found entity 1: a_gray2bin_f9b File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/a_gray2bin_f9b.tdf Line: 22
+Info (12128): Elaborating entity "a_gray2bin_f9b" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|a_gray2bin_f9b:wrptr_g_gray2bin" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 54
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_cg6.tdf
-    Info (12023): Found entity 1: a_graycounter_cg6 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/a_graycounter_cg6.tdf Line: 24
-Info (12128): Elaborating entity "a_graycounter_cg6" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|a_graycounter_cg6:rdptr_g1p" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 56
+    Info (12023): Found entity 1: a_graycounter_cg6 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/a_graycounter_cg6.tdf Line: 24
+Info (12128): Elaborating entity "a_graycounter_cg6" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|a_graycounter_cg6:rdptr_g1p" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_graycounter_8ub.tdf
-    Info (12023): Found entity 1: a_graycounter_8ub File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/a_graycounter_8ub.tdf Line: 24
-Info (12128): Elaborating entity "a_graycounter_8ub" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|a_graycounter_8ub:wrptr_g1p" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 57
+    Info (12023): Found entity 1: a_graycounter_8ub File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/a_graycounter_8ub.tdf Line: 24
+Info (12128): Elaborating entity "a_graycounter_8ub" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|a_graycounter_8ub:wrptr_g1p" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_7b81.tdf
-    Info (12023): Found entity 1: altsyncram_7b81 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/altsyncram_7b81.tdf Line: 27
-Info (12128): Elaborating entity "altsyncram_7b81" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|altsyncram_7b81:fifo_ram" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 58
+    Info (12023): Found entity 1: altsyncram_7b81 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/altsyncram_7b81.tdf Line: 27
+Info (12128): Elaborating entity "altsyncram_7b81" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|altsyncram_7b81:fifo_ram" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 58
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_g9l.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_g9l File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/alt_synch_pipe_g9l.tdf Line: 26
-Info (12128): Elaborating entity "alt_synch_pipe_g9l" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_g9l:rs_dgwp" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 77
+    Info (12023): Found entity 1: alt_synch_pipe_g9l File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/alt_synch_pipe_g9l.tdf Line: 26
+Info (12128): Elaborating entity "alt_synch_pipe_g9l" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_g9l:rs_dgwp" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 77
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_1v8.tdf
-    Info (12023): Found entity 1: dffpipe_1v8 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dffpipe_1v8.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_1v8" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_g9l:rs_dgwp|dffpipe_1v8:dffpipe12" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/alt_synch_pipe_g9l.tdf Line: 33
+    Info (12023): Found entity 1: dffpipe_1v8 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dffpipe_1v8.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_1v8" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_g9l:rs_dgwp|dffpipe_1v8:dffpipe12" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/alt_synch_pipe_g9l.tdf Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_0v8.tdf
-    Info (12023): Found entity 1: dffpipe_0v8 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dffpipe_0v8.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_0v8" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|dffpipe_0v8:ws_brp" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 78
+    Info (12023): Found entity 1: dffpipe_0v8 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dffpipe_0v8.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_0v8" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|dffpipe_0v8:ws_brp" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 78
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_synch_pipe_h9l.tdf
-    Info (12023): Found entity 1: alt_synch_pipe_h9l File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/alt_synch_pipe_h9l.tdf Line: 26
-Info (12128): Elaborating entity "alt_synch_pipe_h9l" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_h9l:ws_dgrp" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 80
+    Info (12023): Found entity 1: alt_synch_pipe_h9l File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/alt_synch_pipe_h9l.tdf Line: 26
+Info (12128): Elaborating entity "alt_synch_pipe_h9l" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_h9l:ws_dgrp" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 80
 Info (12021): Found 1 design units, including 1 entities, in source file db/dffpipe_2v8.tdf
-    Info (12023): Found entity 1: dffpipe_2v8 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dffpipe_2v8.tdf Line: 24
-Info (12128): Elaborating entity "dffpipe_2v8" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_h9l:ws_dgrp|dffpipe_2v8:dffpipe16" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/alt_synch_pipe_h9l.tdf Line: 33
+    Info (12023): Found entity 1: dffpipe_2v8 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dffpipe_2v8.tdf Line: 24
+Info (12128): Elaborating entity "dffpipe_2v8" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|alt_synch_pipe_h9l:ws_dgrp|dffpipe_2v8:dffpipe16" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/alt_synch_pipe_h9l.tdf Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_su5.tdf
-    Info (12023): Found entity 1: cmpr_su5 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/cmpr_su5.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_su5" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|cmpr_su5:rdempty_eq_comp1_lsb" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 84
+    Info (12023): Found entity 1: cmpr_su5 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/cmpr_su5.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_su5" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|cmpr_su5:rdempty_eq_comp1_lsb" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 84
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_5r7.tdf
-    Info (12023): Found entity 1: mux_5r7 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/mux_5r7.tdf Line: 22
-Info (12128): Elaborating entity "mux_5r7" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|mux_5r7:rdemp_eq_comp_lsb_mux" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/dcfifo_b3q1.tdf Line: 92
-Info (12128): Elaborating entity "altera_up_avalon_video_vga_timing" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_up_avalon_video_vga_timing:VGA" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/tictactoe_to_vga.v Line: 389
-Warning (10230): Verilog HDL assignment warning at vga.v(204): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN211/programs/lab3/vga.v Line: 204
-Warning (10230): Verilog HDL assignment warning at vga.v(205): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN211/programs/lab3/vga.v Line: 205
+    Info (12023): Found entity 1: mux_5r7 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/mux_5r7.tdf Line: 22
+Info (12128): Elaborating entity "mux_5r7" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|dcfifo:Data_FIFO|dcfifo_b3q1:auto_generated|mux_5r7:rdemp_eq_comp_lsb_mux" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/dcfifo_b3q1.tdf Line: 92
+Info (12128): Elaborating entity "altera_up_avalon_video_vga_timing" for hierarchy "TicTacToe_to_VGA:GFX|framebuffer:FB|altera_up_avalon_video_vga_timing:VGA" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/tictactoe_to_vga.v Line: 389
+Warning (10230): Verilog HDL assignment warning at vga.v(204): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/vga.v Line: 204
+Warning (10230): Verilog HDL assignment warning at vga.v(205): truncated value with size 32 to match size of target (10) File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/vga.v Line: 205
 Info (19000): Inferred 2 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:OBMP|rom_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to ROM
@@ -1602,7 +1610,7 @@ Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|tictactoe_shader:S
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/lab3_top.ram0_ROM_d8c22375.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_src1.tdf
-    Info (12023): Found entity 1: altsyncram_src1 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/altsyncram_src1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_src1 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/altsyncram_src1.tdf Line: 27
 Info (12130): Elaborated megafunction instantiation "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:XBMP|altsyncram:rom_rtl_0"
 Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|tictactoe_shader:SHADER|ROM:XBMP|altsyncram:rom_rtl_0" with the following parameter:
     Info (12134): Parameter "OPERATION_MODE" = "ROM"
@@ -1616,30 +1624,72 @@ Info (12133): Instantiated megafunction "TicTacToe_to_VGA:GFX|tictactoe_shader:S
     Info (12134): Parameter "WRCONTROL_ACLR_A" = "NONE"
     Info (12134): Parameter "INIT_FILE" = "db/lab3_top.ram0_ROM_9bf1e8c1.hdl.mif"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_tuc1.tdf
-    Info (12023): Found entity 1: altsyncram_tuc1 File: C:/Users/herei/Desktop/CPEN211/programs/lab3/db/altsyncram_tuc1.tdf Line: 27
+    Info (12023): Found entity 1: altsyncram_tuc1 File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/db/altsyncram_tuc1.tdf Line: 27
 Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 4
-    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 10
+    Warning (13410): Pin "HEX0[0]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+    Warning (13410): Pin "HEX0[1]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+    Warning (13410): Pin "HEX0[2]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+    Warning (13410): Pin "HEX0[3]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+    Warning (13410): Pin "HEX0[4]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+    Warning (13410): Pin "HEX0[5]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+    Warning (13410): Pin "HEX0[6]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 4
+    Warning (13410): Pin "HEX1[0]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+    Warning (13410): Pin "HEX1[1]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+    Warning (13410): Pin "HEX1[2]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+    Warning (13410): Pin "HEX1[3]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+    Warning (13410): Pin "HEX1[4]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+    Warning (13410): Pin "HEX1[5]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+    Warning (13410): Pin "HEX1[6]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 5
+    Warning (13410): Pin "HEX2[0]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+    Warning (13410): Pin "HEX2[1]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+    Warning (13410): Pin "HEX2[2]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+    Warning (13410): Pin "HEX2[3]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+    Warning (13410): Pin "HEX2[4]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+    Warning (13410): Pin "HEX2[5]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+    Warning (13410): Pin "HEX2[6]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 6
+    Warning (13410): Pin "HEX3[0]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+    Warning (13410): Pin "HEX3[1]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+    Warning (13410): Pin "HEX3[2]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+    Warning (13410): Pin "HEX3[3]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+    Warning (13410): Pin "HEX3[4]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+    Warning (13410): Pin "HEX3[5]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+    Warning (13410): Pin "HEX3[6]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 7
+    Warning (13410): Pin "HEX4[0]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+    Warning (13410): Pin "HEX4[1]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+    Warning (13410): Pin "HEX4[2]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+    Warning (13410): Pin "HEX4[3]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+    Warning (13410): Pin "HEX4[4]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+    Warning (13410): Pin "HEX4[5]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+    Warning (13410): Pin "HEX4[6]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 8
+    Warning (13410): Pin "HEX5[0]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+    Warning (13410): Pin "HEX5[1]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+    Warning (13410): Pin "HEX5[2]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+    Warning (13410): Pin "HEX5[3]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+    Warning (13410): Pin "HEX5[4]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+    Warning (13410): Pin "HEX5[5]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+    Warning (13410): Pin "HEX5[6]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 9
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 10
+    Warning (13410): Pin "VGA_SYNC_N" is stuck at GND File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 7 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 4 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 2
-    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 2
-    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 2
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/herei/Desktop/CPEN211/programs/lab3/lab3_top.v Line: 3
-Info (21057): Implemented 893 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "KEY[1]" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 2
+    Warning (15610): No output dependent on input pin "KEY[2]" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 2
+    Warning (15610): No output dependent on input pin "KEY[3]" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 2
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Users/herei/Desktop/CPEN/CPEN211_2020_Winter_Labs/From_Github/Lab3/CPEN211Lab3/lab3_top.v Line: 3
+Info (21057): Implemented 935 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
-    Info (21059): Implemented 39 output pins
+    Info (21059): Implemented 81 output pins
     Info (21061): Implemented 781 logic cells
     Info (21064): Implemented 57 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 4871 megabytes
-    Info: Processing ended: Sat Jun 20 22:23:50 2020
-    Info: Elapsed time: 00:01:03
-    Info: Total CPU time (on all processors): 00:01:25
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 80 warnings
+    Info: Peak virtual memory: 4870 megabytes
+    Info: Processing ended: Sun Sep 27 23:18:59 2020
+    Info: Elapsed time: 00:01:07
+    Info: Total CPU time (on all processors): 00:01:41
 
 
