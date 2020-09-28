@@ -9,6 +9,7 @@ Jayant Bhardwaj: 57983801:
 
 
 winning sequence: 0->7->6->3
+Winning Sequence: 2->7->8->5
 
 Game status indicator:
 0 -> Playing
